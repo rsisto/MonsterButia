@@ -1,0 +1,192 @@
+VERSION 17
+/followme: remove redundant save calibration - add brightness block
+/followme: change order of the blocks
+/followme: centre red square in calibrate
+/followme: only follow calibrates or tuple string
+/followme: remove constant number for variable in size of cam
+/followme: uses average color for default in followme
+-followme: remove unused followRGB block
++followme: add get brightness block
++followme: uses -1 to enable auto-brightness of the camera
++followme: rename threshold block when camera mode changes
++followme: add average color selector
++update activity.info to new sugar summary
++add info for plugins
++use new nxt_plugin with two sensors fixed
+/uses new TA > 160
+
+VERSION 16
+/fix forward distance for negative arguments
+/change the getVersion system - add initial call in butiaAPI
++add new resistance block
+/use another version of nxt_plugin with pyusb 1.0.0-a3
++adds set_speed function in butiaAPI
++new driver dinamixel
+/followme: prevent crash when no pygame is present
+/followme: fix crash with no XO cameras/diferent sugar versions
+/followme: set flag brightness constant
+/uses TurtleArt 158
+
+VERSION 15
+/CallModule return a int ever
+-remove unused openModule function from butiaAPI
+/butia_support folder to support
++new functions added to move set the mode of the motors
++new functions on ax12 module exported to API
+/fix path of support in call subprocess
+-remove temp from chotox
++adding getPosition to the bobot driver
+/fix multiple sensor read in nxt plugin
+
+VERSION 14
+/Fix two equal sensors in contigous port
+/Refresh the palette when battery changes too
+/Update translation
+/Fix chotox code
+/Simplify battery colors: grey, orange and red
+/Fix locale problem when use in Gnome
+/Fix colored blocks at start
+
+VERSION 13
+/fix an identation in butiaAPI
++added driver for light sensor
+/uses TA 152+
+
+VERSION 12
++Compatibilidad con Butiá 1.0 and 2.0
+/Se usa TurtleBlocks 149.1+
+
+VERSION 11
+/Se traduce a inglés la butiaAPI
+/Actualización de Butia plugin para Inglés
+/Se unifican los métodos de refrescar
+/Actualización de estilo de los iconos de plugins
+/Se arregla la función get_volt
+/Más de verificación robusto para cámara en FollowMe
+/Se arregla un error menor de captura en el FollowMe
+-Se elimina el viejo permissions.info
+/Se usa el método de regeneración de Butia en el plug-in
+-Varias limpiezas de código
+/Utiliza special_colors en lugar de BOX_COLORS
++Se arregla el bug que usaba el 100% de CPU en Lua
++Añadir los bloques followme para establecer el modo de color de la cámara
+-Se quita "goto and return background" para setear la bandera de refresco
+/Se utiliza TurtleBlocks 149.1
+
+VERSION 10
+I Uses this Turtle commit a0ef174... Push many PO files from Pootle
++FollowMe guarda N calibraciones
+/La tortuga oculta los bloques al ejecutar run
+/Se mejora la tortuga en su ejecución desde Gnome
+
+VERSION 9
++se mejora el tiempo al salir
++se agrega que desde Gnome pregunte por guardar y cierre los plugins
++varias limpiezas en el plugin Sumtia
++FollowMe solo prende la cámara cuando usa X, e Y
++se elimina carpeta .git en el plugin NxT
++se agrega Listi en bobot
++se elimina refresh butia innecesario en el thread (se incrementa la velocidad de ejecución)
++se mejora el refresh de cada bloque eliminando llamadas innecesarias
++se arregla el bloque LED
++se usa TutleBlocks 138+ 
+
+VERSION 8
++Se limpia el plugin de Sumtia
++Se ajusta el plugin Sumtia a PEP8
++Utiliza el nuevo plugin de NXT
++Se limpia el plugin de Butia
++Se arregla el tipo de carga_de_bateria
++Se valida cuando el objeto Butia no se creó
++Se utiliza blk.refresh en lugar de blk.set_color()
++Se corrige error en el comando INIT
++Se mejora el tiempo de detección de que el robot se desconectó
++Se agrega bobot_launch a un thread
++Se mejora el tiempo que tarda la actividad en abrir.
++Se utiliza la versión de TurtleArt 138+
+
+VERSION 7
++Se extienden las funcionalidades agregando los plugin para: Lego WeDo, 
+NxT. Además de tener los usuales: Butiá, FollowMe y Sumtia.
++Se cambia el nombre de TurtleArt Butiá a: TurtleBots.
++Plugin Butiá: se agrega thread que refresca el estado del robot con 
+los sensores que tiene en cada momento, además de muchas otras mejoras.
++Plugin FollowMe: se agrega posibilidad de setear el umbral con un 
+bloque.
++Plugin NxT: se agregan validaciones y chequeos internos.
++Plugin WeDo: se corrige un problema en el nombre de un bloque.
+
+VERSION 6
+/ update i10n-es
++ fix redraw function at start
+
+VERSION 5 
++ some clean up of dead code in pythonAPI
++ integration with turtleart version 114
++ followme plugin included
++ sumo.uy plugin included
++ turn by degrees block
++ turn X degrees
++ move robot move turtle in screen
+
+VERSION 4
++ if comunication with ax12 motors is not ok we paint in gray motor related blocks
++ bobot not print information to the standard output by defaul, only if debug is set
++ new bobot command DEBUG to enable debug information
++ new icon according to http://en.flossmanuals.net/make-your-own-sugar-activities/ch010_package-the-activity/
++ fixed first sensor read type error
++ bobot search for the correct tty matching an arduino with butia firmware
++ bobot refresh the list of sensors connected to the shield
++ fixed setSpeed help string message
+
+VERSION 3
++ soporte para multiples instancias del mismo sensor
++ soporte para estructura de plugins de turtleart 107
++ Internalización de código, disponible actualmente para español/ingles
++ integrado con:
+  medición de carga de bateria
+  manejo del lcd
+  avanzar X unidades el robot y desplegar el trazo en proporción en la pantalla con la tortuga
+  integrado con soporte para plugins de turtle art
+
+VERSION 2
+
++ Icono de la paleta butiá y de la aplicación respetando el logo oficial
+/ Iconos de la paleta butiá en formato vectorial
+/ Iconos de la paleta butiá con fondo del color correcto
++ Aplicación sugarizada, ya no tiene la barra de file, edit .... que ocurre cuando se inicia de shell
+
+VERSION 1
+
++ Release TortleArtButia.xo
++ permisos sobre el serial /activity/permissions.info
++ restruturamiento del trunk para reflejar la actividad TurtleArtButia
+//FIXME derecha deveria ser isquierda y viceversa
++ Chequeo de la coneccion con la api de butia
+//TODO  bobot deberia estar como servicio, y levantarlo solo si NO esta ya levantado
++ bobot incluido en el .xo de TurtleArtButia
++ TurtleBlock ahora no nesecita el pycurl, removido
+
+
+VERSION 0
+
+//TODO que los sensores se vean grices cuando no estan disponibles
+//FIXME chequeo de coneccion en la APYbutia
+I TurtleBlocks nesecita pycurl [apt-get install python-pycurl]
++ Commit TurtleBlocks V94
+/ Tortugarte [TAButia-v1.1.activity] movido a /branches/ (deprecated)
+
+
+####################################################################################
+
+NEWS Structure!
+I info
++ added
+- removed
+/ changed
+//TODO: thing todo
+//FIXME: thing to fix
+
+Please improve this NEWS, adding new information at the beginning of this file
+Add important or relevant changes to define the changelogs from one version to another
+- Team Butia -

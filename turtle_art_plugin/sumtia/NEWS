@@ -1,0 +1,24 @@
+VERSION 2 @ VERSION BUTIA 6
++ support i10n-es
++ fix redraw palete in function start
+/ suport for i18n (revert to english all strings)
+
+
+VERSION 1 @ VERSION BUTIA 5
++ initial commit
+/ icons improved
+
+####################################################################################
+
+NEWS Structure!
+I info
++ added
+- removed
+/ changed
+//TODO: thing todo
+//FIXME: thing to fix
+
+Please improve this NEWS, adding new information at the beginning of this file
+Add important or relevant changes to define the changelogs from one version to another
+- Team Butia -
+

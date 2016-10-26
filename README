@@ -1,0 +1,44 @@
+######## ABOUT BUTIA GIT #########
+
+Each folder contains a different project.
+In each folder there should be a makefile or script to 
+compile or the code itself in the case of python or lua code.
+
+bobot: Contains Bobot-server, a daemon responsible for
+    communicating with the firmware installed in the butia
+    and exporting it's capabilities using TCP / IP
+    requirements-projects: serialcomm, lualibusb
+
+turtle_art_plugin: Implements support of Butia in Turtle Arts.
+    Uses Turtle Art plugin system. In this folder there is a 
+    shell script to make an .xo with TurtleArtButia, a 
+    TurtleArt program whit logo changed and the butia plugin 
+    already instaled 
+    requirements-projects: bobotXO
+
+firmware: Contains the firmware butia for ardino Mega (for 
+    the moment). Also contains other firmwares and tests
+    requirements-projects: arduino, avrdude
+
+usb4all: project usb4all, a firmware for PIC microcontrollers,
+    compatible with butia.
+
+API: implements bobot-server's API in several programming 
+    languages to control Butia
+
+serialcomm: library for using serial
+
+lualibusb: binding library for using libusb in lua
+    requirements-projects: libusb-dev
+
+######### Other remotes projects/sources in git #######
+
+libs/lua: lua source
+	requirements: libreadline-dev
+
+libs/libusb: libusb headers files
+
+
+
+### Last edited 2011/06/12 by Guillermo Reisch <greisch@fing.edu.uy> ###
+

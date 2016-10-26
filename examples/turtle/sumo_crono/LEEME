@@ -1,0 +1,2 @@
+Este es el programa de control de tiempos implementado para el deafío básico butia en el sumo 2011
+hay que poner push_mouse_event.py en el bloque python que corresponde al mouse_update y el push_time_seconds.py en la acción gettime

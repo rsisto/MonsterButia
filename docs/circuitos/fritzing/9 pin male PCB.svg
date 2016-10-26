@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.2"
+   width="46.801353"
+   height="19.802555"
+   viewBox="0 0 520.01502 220.02838"
+   id="svg2867">
+  <desc
+     id="desc2869">Fritzing footprint SVG</desc>
+  <defs
+     id="defs2895" />
+  <rect
+     width="55"
+     height="55"
+     x="-187.52838"
+     y="31.355927"
+     transform="matrix(0,-1,1,0,0,0)"
+     id="rect2883"
+     style="fill:none;stroke:#ffbf00;stroke-width:20" />
+  <g
+     transform="translate(-337.41528,38.757205)"
+     id="keepout" />
+  <g
+     transform="translate(-337.41528,38.757205)"
+     id="soldermask" />
+  <g
+     transform="translate(-337.41528,38.757205)"
+     id="outline" />
+  <g
+     transform="translate(-337.41528,38.757205)"
+     id="silkscreen">
+    <line
+       y1="171.27118"
+       x1="347.41528"
+       y2="171.27118"
+       x2="847.41528"
+       id="line2872"
+       style="stroke:#ffffff;stroke-width:20" />
+    <line
+       y1="171.27118"
+       x1="847.41528"
+       y2="71.271179"
+       x2="847.41528"
+       id="line2874"
+       style="stroke:#ffffff;stroke-width:20" />
+    <line
+       y1="71.271179"
+       x1="847.41528"
+       y2="71.271179"
+       x2="347.41528"
+       id="line2876"
+       style="stroke:#ffffff;stroke-width:20" />
+    <line
+       y1="71.271179"
+       x1="347.41528"
+       y2="171.27118"
+       x2="347.41528"
+       id="line2878"
+       style="stroke:#ffffff;stroke-width:20" />
+    <line
+       y1="171.27118"
+       x1="447.41528"
+       y2="71.271179"
+       x2="447.41528"
+       id="line2880"
+       style="stroke:#ffffff;stroke-width:10" />
+    <line
+       y1="71.24279"
+       x1="847.4303"
+       y2="-28.75721"
+       x2="847.4303"
+       id="line2874-5"
+       style="stroke:#ffffff;stroke-width:20" />
+    <line
+       y1="-28.75721"
+       x1="847.4303"
+       y2="-28.75721"
+       x2="347.43033"
+       id="line2876-7"
+       style="stroke:#ffffff;stroke-width:20" />
+    <line
+       y1="-28.75721"
+       x1="347.43033"
+       y2="71.24279"
+       x2="347.43033"
+       id="line2878-6"
+       style="stroke:#ffffff;stroke-width:20" />
+  </g>
+  <g
+     transform="translate(-337.41528,38.757205)"
+     id="copper0">
+    <circle
+       cx="70"
+       cy="70"
+       r="27.5"
+       transform="matrix(0,-1,1,0,326.2712,191.27118)"
+       id="connector0pin"
+       style="fill:none;stroke:#ffbf00;stroke-width:20" />
+    <circle
+       cx="70"
+       cy="170"
+       r="27.5"
+       transform="matrix(0,-1,1,0,326.2712,191.27118)"
+       id="connector1pin"
+       style="fill:none;stroke:#ffbf00;stroke-width:20" />
+    <circle
+       cx="70"
+       cy="270"
+       r="27.5"
+       transform="matrix(0,-1,1,0,326.2712,191.27118)"
+       id="connector2pin"
+       style="fill:none;stroke:#ffbf00;stroke-width:20" />
+    <circle
+       cx="70"
+       cy="370"
+       r="27.5"
+       transform="matrix(0,-1,1,0,326.2712,191.27118)"
+       id="connector3pin"
+       style="fill:none;stroke:#ffbf00;stroke-width:20" />
+    <circle
+       cx="70"
+       cy="470"
+       r="27.5"
+       transform="matrix(0,-1,1,0,326.2712,191.27118)"
+       id="connector4pin"
+       style="fill:none;stroke:#ffbf00;stroke-width:20" />
+    <circle
+       cx="70"
+       cy="170"
+       r="27.5"
+       transform="matrix(0,-0.99999997,0.99999997,0,326.28628,91.242786)"
+       id="connector8pin"
+       style="fill:none;stroke:#ffbf00;stroke-width:20" />
+    <circle
+       cx="70"
+       cy="270"
+       r="27.5"
+       transform="matrix(0,-0.99999997,0.99999997,0,326.28628,91.242786)"
+       id="connector7pin"
+       style="fill:none;stroke:#ffbf00;stroke-width:20" />
+    <circle
+       cx="70"
+       cy="370"
+       r="27.5"
+       transform="matrix(0,-0.99999997,0.99999997,0,326.28628,91.242786)"
+       id="connector6pin"
+       style="fill:none;stroke:#ffbf00;stroke-width:20" />
+    <circle
+       cx="70"
+       cy="470"
+       r="27.5"
+       transform="matrix(0,-0.99999997,0.99999997,0,326.28628,91.242786)"
+       id="connector5pin"
+       style="fill:none;stroke:#ffbf00;stroke-width:20" />
+  </g>
+</svg>

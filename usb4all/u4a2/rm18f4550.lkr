@@ -1,0 +1,67 @@
+// Sample linker command file for 18F4550 with Bootloader
+// Rawin Rojvanit, 10/30/2004
+
+LIBPATH .
+
+FILES c018i.o
+FILES clib.lib
+FILES p18f4550.lib
+
+CODEPAGE   NAME=boot       START=0x0            END=0x7FF   PROTECTED
+CODEPAGE   NAME=vectors    START=0x800          END=0x0x829        PROTECTED
+CODEPAGE   NAME=usb_endpoints_init_sec	START=0x840		END=0x0A3F PROTECTED
+CODEPAGE   NAME=device_dsc_sec	 		START=0x0A40 END=0x0C3F  PROTECTED
+CODEPAGE   NAME=usb_cd_ptr_sec 			START=0x0C40 END=0x0C7F	PROTECTED
+CODEPAGE   NAME=usb_sd_ptr_sec  		START=0x0C80 END=0x0CFF PROTECTED
+CODEPAGE   NAME=sys_sec       START=0x0D00          END=0x2FFF
+
+CODEPAGE   NAME=user_sec   START=0x3000          END=0x3180 PROTECTED
+
+CODEPAGE   NAME=module_sec   START=0x3181          END=0x7FFF PROTECTED
+
+CODEPAGE   NAME=idlocs     START=0x200000       END=0x200007       PROTECTED
+CODEPAGE   NAME=config     START=0x300000       END=0x30000D       PROTECTED
+CODEPAGE   NAME=devid      START=0x3FFFFE       END=0x3FFFFF       PROTECTED
+CODEPAGE   NAME=eedata     START=0xF00000       END=0xF000FF       PROTECTED
+
+
+ACCESSBANK NAME=accessram  START=0x0            END=0x5F
+DATABANK   NAME=gpr0       START=0x60           END=0xFF		
+DATABANK   NAME=gpr1       START=0x100          END=0x1FF		  	
+DATABANK   NAME=gpr2       START=0x200          END=0x2FF			
+DATABANK   NAME=gpr3       START=0x300          END=0x3FF
+DATABANK   NAME=usb4       START=0x400          END=0x7FF          PROTECTED
+//DATABANK   NAME=usb4       START=0x400          END=0x4FF          PROTECTED
+//DATABANK   NAME=usb5       START=0x500          END=0x5FF          PROTECTED
+//DATABANK   NAME=usb6       START=0x600          END=0x6FF          PROTECTED
+//DATABANK   NAME=usb7       START=0x700          END=0x7FF          PROTECTED
+ACCESSBANK NAME=accesssfr  START=0xF60          END=0xFFF          PROTECTED
+
+SECTION    NAME=CONFIG     ROM=config
+
+SECTION    NAME=_rom_usb_endpoints_init 	ROM=usb_endpoints_init_sec
+SECTION    NAME=_usb_endpoints_init 	ROM=usb_endpoints_init_sec
+SECTION    NAME=_device_dsc 	ROM=device_dsc_sec
+SECTION    NAME=_usb_cd_ptr 	ROM=usb_cd_ptr_sec
+SECTION    NAME=_usb_sd_ptr 	ROM=usb_sd_ptr_sec
+SECTION	   NAME=user		    ROM=user_sec
+SECTION	   NAME=module			ROM=module_sec
+
+
+
+
+// (USAR PROTECTED!!) mapeo las secciones del compilador c para que caigan 
+//en el codigo principal (sys)
+//SECTION    NAME=_startup_scn 	ROM=sys
+//SECTION    NAME=_cinit_scn	 	ROM=sys
+//SECTION    NAME=.cinit		 	ROM=sys
+//SECTION    NAME=isr_tmp		 	ROM=sys
+//SECTION    NAME=.stringtable 	ROM=sys
+//SECTION    NAME=STDIO		 	ROM=sys
+//SECTION    NAME=STDLIB 	ROM=sys
+//SECTION    NAME=STRING 	ROM=sys
+//SECTION    NAME=UARTCODE 	ROM=sys
+//SECTION    NAME=UARTDATA 	ROM=sys
+
+
+STACK SIZE=0x100 RAM=gpr3

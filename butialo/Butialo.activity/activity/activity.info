@@ -1,0 +1,10 @@
+[Activity]
+name = Butialo
+bundle_id = uy.fing.Butialo
+service_name = uy.fing.Butialo
+exec = sugar-activity pippy_app.ButialoActivity
+icon = activity-icon
+activity_version = 4
+mime_types = text/x-lua, pickle/groupthink-butialo
+show_launcher = yes
+license = GPLv2+

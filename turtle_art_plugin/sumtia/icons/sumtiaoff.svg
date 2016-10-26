@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="55"
+   height="55"
+   id="svg2568"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.3.1 r9886"
+   version="1.0"
+   sodipodi:docname="sumtiaoff.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2570">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 32 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="64 : 32 : 1"
+       inkscape:persp3d-origin="32 : 21.333333 : 1"
+       id="perspective2576" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.5"
+     inkscape:cx="3.5496413"
+     inkscape:cy="15.564304"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="715"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata2573">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <rect
+       width="45"
+       height="45"
+       x="5"
+       y="5"
+       id="rect3269"
+       style="fill:#282828;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    <g
+       id="g3763"
+       transform="matrix(1.029586,0,0,1.0266006,-2.0015797,-2.1352855)">
+      <path
+         inkscape:transform-center-y="-27.029669"
+         inkscape:transform-center-x="-143.19898"
+         transform="matrix(0.11610699,0,0,0.11699914,-7.6304861,-33.516684)"
+         d="m 500.72572,533.20117 c 0,103.45736 -84.26814,187.32613 -188.21815,187.32613 -103.95002,0 -188.21816,-83.86877 -188.21816,-187.32613 0,-103.45736 84.26814,-187.32612 188.21816,-187.32612 103.95001,0 188.21815,83.86876 188.21815,187.32612 z"
+         sodipodi:ry="187.32613"
+         sodipodi:rx="188.21815"
+         sodipodi:cy="533.20117"
+         sodipodi:cx="312.50757"
+         id="path3215"
+         style="fill:#ffffff;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:transform-center-y="-27.18903"
+         inkscape:transform-center-x="-143.05957"
+         transform="matrix(0.12763676,-5.2365011e-4,4.9695352e-4,0.12502459,-20.034892,-35.479013)"
+         d="m 531.42859,515.2193 c 0,86.7876 -68.43648,157.14285 -152.85715,157.14285 -84.42067,0 -152.85715,-70.35525 -152.85715,-157.14285 0,-86.7876 68.43648,-157.14285 152.85715,-157.14285 84.42067,0 152.85715,70.35525 152.85715,157.14285 z"
+         sodipodi:ry="157.14285"
+         sodipodi:rx="152.85715"
+         sodipodi:cy="515.2193"
+         sodipodi:cx="378.57144"
+         id="path2383"
+         style="fill:#282828;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         sodipodi:type="arc" />
+      <rect
+         inkscape:transform-center-y="-60.823143"
+         inkscape:transform-center-x="-142.401"
+         y="23.512522"
+         x="25.070364"
+         height="1.4836329"
+         width="7.0287724"
+         id="rect3221"
+         style="fill:#ffffff;stroke:none" />
+      <rect
+         inkscape:transform-center-y="-42.584666"
+         inkscape:transform-center-x="-142.33403"
+         y="31.374796"
+         x="25.015799"
+         height="1.4836329"
+         width="7.0287724"
+         id="rect3223"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+  </g>
+</svg>

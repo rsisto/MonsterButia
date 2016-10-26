@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-17 21:03-0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#~ msgid "SumBot"
+#~ msgstr "SumBot"
+
+#~ msgid "speed SumBot"
+#~ msgstr "velocidad SumBot"
+
+#~ msgid "submit the speed to the SumBot"
+#~ msgstr "setea la velocidad del SumBot"
+
+#~ msgid "set the default speed for the movement commands"
+#~ msgstr "setea la velocidad por defecto para los comandos de movimiento"
+
+#~ msgid "forward SumBot"
+#~ msgstr "adelante SumBot"
+
+#~ msgid "move SumBot forward"
+#~ msgstr "mueve el SumBot hacia adelante"
+
+#~ msgid "backward SumBot"
+#~ msgstr "atrás SumBot"
+
+#~ msgid "move SumBot backward"
+#~ msgstr "mueve el SumBot hacia atrás"
+
+#~ msgid "stop SumBot"
+#~ msgstr "detener SumBot"
+
+#~ msgid "stop the SumBot"
+#~ msgstr "detiene el SumBot"
+
+#~ msgid "left SumBot"
+#~ msgstr "izquierda SumBot"
+
+#~ msgid "turn left the SumBot"
+#~ msgstr "gira el SumBot hacia la izquierda"
+
+#~ msgid "right SumBot"
+#~ msgstr "derecha SumBot"
+
+#~ msgid "turn right the SumBot"
+#~ msgstr "gira el SumBot hacia la derecha"
+
+#~ msgid "get the angle to the center of the dohyo"
+#~ msgstr "obtiene el ángulo al centro del dohyo"
+
+#~ msgid "angle to Enemy"
+#~ msgstr "ángulo al Enemigo"
+
+#~ msgid "get the angle to the Enemy"
+#~ msgstr "obtiene el ángulo al Enemigo"
+
+#~ msgid "x coor. SumBot"
+#~ msgstr "coor. x SumBot"
+
+#~ msgid "get the x coordinate of the SumBot"
+#~ msgstr "obtiene la coordenada x del Sumbot"
+
+#~ msgid "y coor. SumBot"
+#~ msgstr "coor. y SumBot"
+
+#~ msgid "get the y coordinate of the SumBot"
+#~ msgstr "obtiene la coordenada y del Sumbot"
+
+#~ msgid "x coor. Enemy"
+#~ msgstr "coor. x Enemigo"
+
+#~ msgid "get the x coordinate of the Enemy"
+#~ msgstr "obtiene la coordenada x del Enemigo"
+
+#~ msgid "y coor. Enemy"
+#~ msgstr "coor. y Enemigo"
+
+#~ msgid "get the y coordinate of the Enemy"
+#~ msgstr "obtiene la coordenada y del Enemigo"
+
+#~ msgid "rotation SumBot"
+#~ msgstr "rotación SumBot"
+
+#~ msgid "get the rotation of the Sumbot"
+#~ msgstr "obtiene la rotación del SumBot"
+
+#~ msgid "rotation Enemy"
+#~ msgstr "rotación Enemigo"
+
+#~ msgid "get the rotation of the Enemy"
+#~ msgstr "obtiene la rotación del Enemigo"
+
+#~ msgid "get the distance to the center of the dohyo"
+#~ msgstr "obtiene la distancia al centro del dohyo"
+
+#~ msgid "distance to Enemy"
+#~ msgstr "distancia al Enemigo"
+
+#~ msgid "get the distance to the Enemy"
+#~ msgstr "obtiene la distancia al Enemigo"
+
+#~ msgid "update information from the server"
+#~ msgstr "actualiza la información desde el servidor"

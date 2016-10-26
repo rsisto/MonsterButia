@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-06 01:31-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: followme/followme.py:35
+msgid "Error importing Pygame. This plugin require Pygame 1.9"
+msgstr ""
+
+#: followme/followme.py:81
+msgid "No cameras was found"
+msgstr ""
+
+#: followme/followme.py:100
+msgid "Error in stop camera"
+msgstr ""
+
+#: followme/followme.py:109
+msgid "Error in start camera"
+msgstr ""
+
+#: followme/followme.py:119
+msgid "Error in get mask"
+msgstr ""
+
+#: followme/followme.py:245
+msgid ""
+"set the camera brightness as a value between 0 to 255. Use -1 to enable the "
+"auto-brightness"
+msgstr ""
+
+#: followme/followme.py:265
+msgid "set the color mode of the camera: RGB; YUV or HSV"
+msgstr ""
+
+#: followme/followme.py:303
+msgid "get brightness"
+msgstr ""
+
+#: followme/followme.py:304
+msgid "get the brightness of the ambient"
+msgstr ""
+
+#: followme/followme.py:312
+msgid "average color"
+msgstr ""
+
+#: followme/followme.py:314
+msgid "if 0: average color is off when calibrates; for other values is on"
+msgstr ""
+
+#: followme/followme.py:343
+msgid "U"
+msgstr ""
+
+#: followme/followme.py:344
+msgid "Y"
+msgstr ""
+
+#: followme/followme.py:345 followme/followme.py:349
+msgid "V"
+msgstr ""
+
+#: followme/followme.py:347
+msgid "S"
+msgstr ""
+
+#: followme/followme.py:348
+msgid "H"
+msgstr ""
+
+#~ msgid "set a threshold for a RGB color"
+#~ msgstr "define el umbral para un color RGB"
+
+#~ msgid "set the minimal number of pixels to follow"
+#~ msgstr "define el mínimo número de píxeles a seguir"
+
+#~ msgid "calibrate"
+#~ msgstr "calibrar"
+
+#~ msgid "pixels"
+#~ msgstr "píxeles"
+
+#~ msgid "return the number of pixels of the biggest blob"
+#~ msgstr "devuelve el número de píxeles de la mancha mas grande"

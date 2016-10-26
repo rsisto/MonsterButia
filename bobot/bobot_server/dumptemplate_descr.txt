@@ -1,0 +1,37 @@
+<html>
+<head><title>Bobot dump</title></head>
+<body>
+<h2>Bobot dump</h2>
+<a href="/index.htm">home</a> | dump
+<hr>
+Modules: <!--LIST--><br>
+
+<HR>
+<H2>
+<FONT SIZE="-1">
+Funciones disponibles en </FONT>
+<BR>
+<!--MODULENAME--></H2>
+
+<HR>
+
+<P>
+A continuaci&oacute;n se lista las funciones disponibles en este m&oacute;dulo.
+<br>
+Puedes invocar la funci&oacute;n ingresando los datos necesarios y presionando el bot&oacute;n Submit.
+<p>
+ 
+<P>
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" >
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Resumen de Funciones</B></FONT></TH>
+</TR>
+
+
+<!--ROWS--><br>
+<hr>
+</body>
+</html>

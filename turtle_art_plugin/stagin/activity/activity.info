@@ -1,0 +1,10 @@
+[Activity]
+name = TurtleBots
+activity_version = 17
+license = MIT
+bundle_id = org.laptop.TurtleArtButia
+exec = sugar-activity TurtleArtActivity.TurtleArtActivity
+icon = logo_butia_vec
+show_launcher = yes
+mime_types = application/x-turtle-art
+summary = TurtleBlocks with some robot plugins: Butia, Lego NxT, WeDo, FollowMe

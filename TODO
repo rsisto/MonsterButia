@@ -1,0 +1,10 @@
++ chequear si esta instalado lua en la versión de sugar
+	llamar a ./lua si no está ó
+	llamar a lua si está
++ giros y avanzar digujar en la espera
++ revisar constante de giro y avance para que no sea dependiente de la velocida
++ compilar pygame en el makexo
++ nuevo esquema de drivers de jorge
++ plug and play
++ codigo de usb4all
+

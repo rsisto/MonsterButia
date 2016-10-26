@@ -1,0 +1,11 @@
+<html>
+<head><title>Bobot dump</title></head>
+<body>
+<h2>Bobot</h2>
+<a href="/index.htm">home</a> | modules
+<hr>
+Modules: <!--LIST--><br>
+
+<hr>
+</body>
+</html>

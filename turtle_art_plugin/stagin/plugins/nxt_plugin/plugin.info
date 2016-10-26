@@ -1,0 +1,5 @@
+[Plugin]
+name=nxt_plugin
+palette=nxt-motors, nxt-sensors
+version=17
+

@@ -1,0 +1,17 @@
+VERSION 1
+
+ + Serialcomm patch to avoid not response from arduino in some GNU/Linux flavors
+
+##########################################################################################
+
+Estructura del NEWS
+I info
++ Agregado
+- sacado
+/ cambiado
+//TODO: por hacer
+//FIXME: funciona pero...
+
+Sirvase cambiar a su gusto este NEWS, agregando nueva informacion al comienzo del archivo
+Deje cambios importantes o relevantes para definir los changelogs de una version a otra
+

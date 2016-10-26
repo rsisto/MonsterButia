@@ -1,0 +1,1 @@
+/home/andres/kamikaze/kamikaze_8_09/8.09/staging_dir/mipsel/host/share/libtool/ltmain.sh

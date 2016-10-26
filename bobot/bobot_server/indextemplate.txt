@@ -1,0 +1,16 @@
+<html>
+<head><title>Bobot</title></head>
+<body>
+<h2>Bobot</h2>
+home | <a href="/dump.htm">modules</a>
+<hr>
+
+<img src="/bobot.png" alt="bobot logo" width="200" height="200" />
+<p>
+<a href="http://www.fing.edu.uy/inco/grupos/mina/">Grupo MINA</a><br> 
+In.Co., Facultad de Ingenier&iacute;a<br>
+Universidad de la Rep&uacute;blica<br>
+Uruguay</p>
+<hr>
+</body>
+</html>

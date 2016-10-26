@@ -1,0 +1,24 @@
+1) Ejecutar el script que dice servidor "servidor_streaming.sh" en el lugar desde el cual se quiere hacer streaming de video. 
+
+2) Ejecutal el script "cliente_streaming.sh" donde se quiere leer la señal de video.
+
+NOTA: es importante setear en ambos scripts el mismo IP y PUERTO de donde se quiere enviar y leer la señal.
+
+Suerte!
+Equipo Butia
+butia@fing.edu.uy
+
+Código de los scripts:
+
+Method1
+
+xo sending video:
+
+gst-launch v4l2src ! video/x-raw-yuv,width=320,height=240,framerate=\(fraction\)5/1 ! ffmpegcolorspace ! jpegenc ! multipartmux ! tcpserversink host=192.168.2.249 port=5000
+
+xo recieving video:
+
+gst-launch tcpclientsrc host=192.168.2.249 port=5000 ! multipartdemux ! jpegdec ! autovideosink
+
+
+

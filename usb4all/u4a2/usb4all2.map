@@ -1,0 +1,1866 @@
+MPLINK 4.22, Linker
+Linker Map File - Created Mon Aug  2 18:50:56 2010
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+  _RESET_INTERRUPT_VECTOR       code   0x000800    program   0x000006
+   _HIGH_INTERRUPT_VECTOR       code   0x000808    program   0x000006
+    _LOW_INTERRUPT_VECTOR       code   0x000818    program   0x000002
+  _rom_usb_endpoints_init    romdata   0x000840    program   0x000001
+      _usb_endpoints_init       code   0x000842    program   0x000064
+              _device_dsc    romdata   0x000a40    program   0x0000c0
+              _usb_cd_ptr    romdata   0x000c40    program   0x000004
+              _usb_sd_ptr    romdata   0x000c80    program   0x000008
+                   .cinit    romdata   0x000d00    program   0x00003e
+                      sys       code   0x000d3e    program   0x001782
+   .code_handlerManager.o       code   0x0024c0    program   0x0006c4
+               _cinit_scn       code   0x002b84    program   0x00009e
+             D10KTCYXCODE       code   0x002c22    program   0x00002e
+              D1KTCYXCODE       code   0x002c50    program   0x000020
+             _startup_scn       code   0x002c70    program   0x00001c
+                    .code       code   0x002c8c    program   0x00000e
+           .code___init.o       code   0x002c9a    program   0x000002
+   .romdata_usr_display.o    romdata   0x002c9c    program   0x000000
+.romdata_usr_led_amarillo.o    romdata   0x002c9c    program   0x000000
+        .romdata_usbdrv.o    romdata   0x002c9c    program   0x000000
+  .idata_usr_led_rojo.o_i    romdata   0x002c9c    program   0x000000
+    .romdata_usbctrltrf.o    romdata   0x002c9c    program   0x000000
+     .romdata_T0Service.o    romdata   0x002c9c    program   0x000000
+  .romdata_usr_led_rojo.o    romdata   0x002c9c    program   0x000000
+          .romdata_usb9.o    romdata   0x002c9c    program   0x000000
+  .romdata_userLoopBack.o    romdata   0x002c9c    program   0x000000
+        .romdata_usbdsc.o    romdata   0x002c9c    program   0x000000
+    .romdata_usr_puerta.o    romdata   0x002c9c    program   0x000000
+    .idata_usr_puerta.o_i    romdata   0x002c9c    program   0x000000
+         .romdata_c018i.o    romdata   0x002c9c    program   0x000000
+ .romdata_usr_led_verde.o    romdata   0x002c9c    program   0x000000
+    .romdata_dynamicISR.o    romdata   0x002c9c    program   0x000000
+ .idata_usr_led_verde.o_i    romdata   0x002c9c    program   0x000000
+.idata_usr_led_amarillo.o_i    romdata   0x002c9c    program   0x000001
+.romdata_handlerManager.o    romdata   0x002c9c    program   0x000000
+  .romdata_loaderModule.o    romdata   0x002c9c    program   0x000000
+        .romdata___init.o    romdata   0x002c9c    program   0x000000
+    .romdata_usr_buzzer.o    romdata   0x002c9c    program   0x000000
+.romdata_dynamicPolling.o    romdata   0x002c9c    program   0x000000
+.romdata_descriptorManager.o    romdata   0x002c9c    program   0x000000
+ .romdata_testT0Service.o    romdata   0x002c9c    program   0x000000
+          .romdata_main.o    romdata   0x002c9c    program   0x000000
+.romdata_stepMotorTimer.o    romdata   0x002c9c    program   0x000000
+   .romdata_adminModule.o    romdata   0x002c9c    program   0x000000
+       .romdata_usbmmap.o    romdata   0x002c9c    program   0x000000
+             .stringtable    romdata   0x002c9c    program   0x000000
+  .romdata_usr_sensorIR.o    romdata   0x002c9c    program   0x000000
+  .idata_usr_sensorIR.o_i    romdata   0x002c9c    program   0x000000
+       .romdata_T0Proxy.o    romdata   0x002c9c    program   0x000000
+   .idata_usr_display.o_i    romdata   0x002c9d    program   0x000001
+    .idata_usr_buzzer.o_i    romdata   0x002c9e    program   0x000000
+  .idata_userLoopBack.o_i    romdata   0x002c9e    program   0x000000
+       .idata_usbmmap.o_i    romdata   0x002c9e    program   0x000006
+        .idata_usbdsc.o_i    romdata   0x002ca4    program   0x000000
+          .idata_usb9.o_i    romdata   0x002ca4    program   0x000000
+    .idata_usbctrltrf.o_i    romdata   0x002ca4    program   0x000000
+        .idata_usbdrv.o_i    romdata   0x002ca4    program   0x000000
+.idata_stepMotorTimer.o_i    romdata   0x002ca4    program   0x00001e
+ .idata_testT0Service.o_i    romdata   0x002ca4    program   0x000000
+     .idata_T0Service.o_i    romdata   0x002cc2    program   0x000002
+        .idata___init.o_i    romdata   0x002cc2    program   0x000000
+         .idata_c018i.o_i    romdata   0x002cc2    program   0x000000
+.idata_handlerManager.o_i    romdata   0x002cc2    program   0x000000
+  .idata_loaderModule.o_i    romdata   0x002cc2    program   0x000000
+.idata_dynamicPolling.o_i    romdata   0x002cc2    program   0x000000
+   .idata_adminModule.o_i    romdata   0x002cc2    program   0x000000
+.idata_descriptorManager.o_i    romdata   0x002cc2    program   0x000000
+    .idata_dynamicISR.o_i    romdata   0x002cc2    program   0x000000
+          .idata_main.o_i    romdata   0x002cc2    program   0x000000
+       .idata_T0Proxy.o_i    romdata   0x002cc4    program   0x000000
+     .code_usr_sensorIR.o       code   0x002cc4    program   0x000000
+          .code_usbmmap.o       code   0x002cc4    program   0x000000
+      .code_adminModule.o       code   0x002cc4    program   0x000000
+   .code_stepMotorTimer.o       code   0x002cc4    program   0x000000
+             .code_main.o       code   0x002cc4    program   0x000000
+    .code_testT0Service.o       code   0x002cc4    program   0x000000
+.code_descriptorManager.o       code   0x002cc4    program   0x000000
+   .code_dynamicPolling.o       code   0x002cc4    program   0x000000
+     .code_loaderModule.o       code   0x002cc4    program   0x000000
+       .code_usr_buzzer.o       code   0x002cc4    program   0x000000
+ .code_usr_led_amarillo.o       code   0x002cc4    program   0x000000
+     .code_userLoopBack.o       code   0x002cc4    program   0x000000
+     .code_usr_led_rojo.o       code   0x002cc4    program   0x000000
+       .code_dynamicISR.o       code   0x002cc4    program   0x000000
+    .code_usr_led_verde.o       code   0x002cc4    program   0x000000
+            .code_c018i.o       code   0x002cc4    program   0x000000
+           .code_usbdsc.o       code   0x002cc4    program   0x000000
+       .code_usr_puerta.o       code   0x002cc4    program   0x000000
+             .code_usb9.o       code   0x002cc4    program   0x000000
+       .code_usbctrltrf.o       code   0x002cc4    program   0x000000
+        .code_T0Service.o       code   0x002cc4    program   0x000000
+           .code_usbdrv.o       code   0x002cc4    program   0x000000
+          .code_T0Proxy.o       code   0x002cc4    program   0x000000
+      .code_usr_display.o       code   0x002cc4    program   0x000000
+                     user    romdata   0x003000    program   0x00008c
+                   module       code   0x003182    program   0x002818
+                MATH_DATA      udata   0x000000       data   0x00000b
+                 .tmpdata      udata   0x00000b       data   0x000006
+         interruption_tmp      udata   0x000011       data   0x000002
+                DELAYDAT2      udata   0x000013       data   0x000001
+                DELAYDAT1      udata   0x000014       data   0x000001
+  .udata_handlerManager.o      udata   0x000060       data   0x000085
+  .udata_stepMotorTimer.o      udata   0x0000e5       data   0x000019
+          .udata_usbdrv.o      udata   0x0000fe       data   0x000002
+       .udata_T0Service.o      udata   0x000100       data   0x000028
+  .idata_stepMotorTimer.o      idata   0x000128       data   0x00001e
+         .udata_T0Proxy.o      udata   0x000146       data   0x00000d
+      .udata_dynamicISR.o      udata   0x000153       data   0x00000b
+  .udata_dynamicPolling.o      udata   0x00015e       data   0x00000a
+           .udata_c018i.o      udata   0x000168       data   0x00000a
+      .udata_usbctrltrf.o      udata   0x000172       data   0x000008
+         .idata_usbmmap.o      idata   0x00017a       data   0x000006
+     .udata_adminModule.o      udata   0x000180       data   0x000005
+         .udata_usbmmap.o      udata   0x000185       data   0x000004
+    .udata_usr_sensorIR.o      udata   0x000189       data   0x000003
+      .udata_usr_puerta.o      udata   0x00018c       data   0x000003
+   .udata_usr_led_verde.o      udata   0x00018f       data   0x000003
+    .udata_usr_led_rojo.o      udata   0x000192       data   0x000003
+.udata_usr_led_amarillo.o      udata   0x000195       data   0x000003
+     .udata_usr_display.o      udata   0x000198       data   0x000003
+      .udata_usr_buzzer.o      udata   0x00019b       data   0x000003
+    .udata_userLoopBack.o      udata   0x00019e       data   0x000003
+       .idata_T0Service.o      idata   0x0001a1       data   0x000002
+.idata_usr_led_amarillo.o      idata   0x0001a3       data   0x000001
+     .idata_usr_display.o      idata   0x0001a4       data   0x000001
+      .idata_usr_puerta.o      idata   0x0001a5       data   0x000000
+   .idata_usr_led_verde.o      idata   0x0001a5       data   0x000000
+    .idata_usr_sensorIR.o      idata   0x0001a5       data   0x000000
+   .udata_testT0Service.o      udata   0x0001a5       data   0x000000
+    .idata_usr_led_rojo.o      idata   0x0001a5       data   0x000000
+   .idata_testT0Service.o      idata   0x0001a5       data   0x000000
+          .udata___init.o      udata   0x0001a5       data   0x000000
+          .idata___init.o      idata   0x0001a5       data   0x000000
+           .idata_c018i.o      idata   0x0001a5       data   0x000000
+     .idata_adminModule.o      idata   0x0001a5       data   0x000000
+  .idata_handlerManager.o      idata   0x0001a5       data   0x000000
+    .udata_loaderModule.o      udata   0x0001a5       data   0x000000
+    .idata_loaderModule.o      idata   0x0001a5       data   0x000000
+  .idata_dynamicPolling.o      idata   0x0001a5       data   0x000000
+.udata_descriptorManager.o      udata   0x0001a5       data   0x000000
+.idata_descriptorManager.o      idata   0x0001a5       data   0x000000
+            .udata_main.o      udata   0x0001a5       data   0x000000
+            .idata_main.o      idata   0x0001a5       data   0x000000
+         .idata_T0Proxy.o      idata   0x0001a5       data   0x000000
+          .idata_usbdrv.o      idata   0x0001a5       data   0x000000
+      .idata_usbctrltrf.o      idata   0x0001a5       data   0x000000
+            .udata_usb9.o      udata   0x0001a5       data   0x000000
+            .idata_usb9.o      idata   0x0001a5       data   0x000000
+          .udata_usbdsc.o      udata   0x0001a5       data   0x000000
+          .idata_usbdsc.o      idata   0x0001a5       data   0x000000
+      .idata_dynamicISR.o      idata   0x0001a5       data   0x000000
+    .idata_userLoopBack.o      idata   0x0001a5       data   0x000000
+      .idata_usr_buzzer.o      idata   0x0001a5       data   0x000000
+                   .stack      udata   0x000300       data   0x000100
+                  usbram4      udata   0x000400       data   0x0001b0
+            SFR_UNBANKED0      udata   0x000f62       data   0x00009e
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000800    0x000805      
+                            0x000808    0x00080d      
+                            0x000818    0x000819      
+                            0x000840    0x000840      
+                            0x000842    0x0008a5      
+                            0x000a40    0x000aff      
+                            0x000c40    0x000c43      
+                            0x000c80    0x000c87      
+                            0x000d00    0x002cc3      
+                            0x003000    0x00308b      
+                            0x003182    0x005999      
+            18861 out of 33026 program addresses used, program memory utilization is 57%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 BusyXLCD   0x00425a    program     extern Z:\home\andres\u4a2\user\usr_display.c
+               ClearArray   0x001906    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+                   D10K_1   0x002c2e    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x002c3a    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x002c2c    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D1K_1   0x002c5c    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x002c5a    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+             Delay10KTCYx   0x002c22    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
+              Delay1KTCYx   0x002c50    program     extern C:\MCC18\src\traditional\delays\d1ktcyx.asm
+            DelayFor18TCY   0x004228    program     extern Z:\home\andres\u4a2\user\usr_display.c
+             DelayPORXLCD   0x00424e    program     extern Z:\home\andres\u4a2\user\usr_display.c
+                DelayXLCD   0x004254    program     extern Z:\home\andres\u4a2\user\usr_display.c
+         InitializeSystem   0x0015ee    program     static Z:\home\andres\u4a2\main.c
+          MotorAStepEvent   0x005114    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+          MotorBStepEvent   0x005156    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+     MotorRegulationEvent   0x005196    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+        MotorTmrConfigure   0x0051da    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+             MotorTmrInit   0x004f98    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+      MotorTmrModuleTable   0x003070    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+         MotorTmrReceived   0x0051dc    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+          MotorTmrRelease   0x0051be    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+                 OpenXLCD   0x0042a2    program     extern Z:\home\andres\u4a2\user\usr_display.c
+        ROM_MAX_EP_NUMBER   0x000840    program     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+             ReadSensorIR   0x004d88    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+             SetDDRamAddr   0x004282    program     extern Z:\home\andres\u4a2\user\usr_display.c
+              TestT0Event   0x005946    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+             TestT0Event2   0x005952    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+   TestT0ServiceConfigure   0x00596a    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+        TestT0ServiceInit   0x005922    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+ TestT0ServiceModuleTable   0x00307e    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+     TestT0ServiceRelease   0x00595e    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+        USBCheckBusStatus   0x0017c2    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+       USBCheckStdRequest   0x001b76    program     extern Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+         USBCtrlEPService   0x001930    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+ USBCtrlEPServiceComplete   0x001aa0    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+      USBCtrlTrfInHandler   0x001990    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+     USBCtrlTrfOutHandler   0x001972    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+      USBCtrlTrfRxService   0x001a4c    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+   USBCtrlTrfSetupHandler   0x001954    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+      USBCtrlTrfTxService   0x0019c6    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+         USBDriverService   0x0017fa    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+          USBErrorHandler   0x0018be    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+              USBGenRead2   0x0024e6    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+             USBGenWrite2   0x002662    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+               USBInitEPs   0x000842    program     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+         USBModuleDisable   0x0017ec    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+          USBModuleEnable   0x0017de    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+USBPrepareForNextSetupTrf   0x001b12    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+  USBProtocolResetHandler   0x0018c2    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+          USBRemoteWakeup   0x001888    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+            USBSoftDetach   0x0017f6    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+          USBStallHandler   0x0018b0    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+  USBStdFeatureReqHandler   0x001d1c    program     extern Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+      USBStdGetDscHandler   0x001c14    program     extern Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+   USBStdGetStatusHandler   0x001cb8    program     extern Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+      USBStdSetCfgHandler   0x001c82    program     extern Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+               USBSuspend   0x001878    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+                 USBTasks   0x001618    program     extern Z:\home\andres\u4a2\main.c
+       USBWakeFromSuspend   0x001880    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+               USB_CD_Ptr   0x000c40    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+               USB_SD_Ptr   0x000c80    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+          USB_SOF_Handler   0x0018ac    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+      UserBuzzerConfigure   0x003306    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+           UserBuzzerInit   0x0032cc    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+      UserBuzzerProcessIO   0x003308    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+       UserBuzzerReceived   0x0033d8    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+        UserBuzzerRelease   0x003310    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+     UserDisplayConfigure   0x004532    program     extern Z:\home\andres\u4a2\user\usr_display.c
+          UserDisplayInit   0x0043d4    program     extern Z:\home\andres\u4a2\user\usr_display.c
+     UserDisplayProcessIO   0x004534    program     extern Z:\home\andres\u4a2\user\usr_display.c
+      UserDisplayReceived   0x00455e    program     extern Z:\home\andres\u4a2\user\usr_display.c
+       UserDisplayRelease   0x00453c    program     extern Z:\home\andres\u4a2\user\usr_display.c
+ UserLedAmarilloConfigure   0x00369c    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+      UserLedAmarilloInit   0x003652    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+ UserLedAmarilloProcessIO   0x00369e    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+  UserLedAmarilloReceived   0x0036fe    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+   UserLedAmarilloRelease   0x0036a6    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+     UserLedRojoConfigure   0x003a68    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+          UserLedRojoInit   0x003a22    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+     UserLedRojoProcessIO   0x003a6a    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+      UserLedRojoReceived   0x003aaa    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+       UserLedRojoRelease   0x003a72    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+    UserLedVerdeConfigure   0x003d88    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+         UserLedVerdeInit   0x003d42    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+    UserLedVerdeProcessIO   0x003d8a    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+     UserLedVerdeReceived   0x003dca    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+      UserLedVerdeRelease   0x003d92    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+    UserLoopBackConfigure   0x0031ca    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+         UserLoopBackInit   0x003182    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+  UserLoopBackModuleTable   0x003000    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+    UserLoopBackProcessIO   0x0031cc    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+     UserLoopBackReceived   0x003200    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+      UserLoopBackRelease   0x0031d4    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+      UserPuertaConfigure   0x0040a8    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+           UserPuertaInit   0x004062    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+      UserPuertaProcessIO   0x0040aa    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+       UserPuertaReceived   0x0040ea    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+        UserPuertaRelease   0x0040b2    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+    UserSensorIRConfigure   0x004d90    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+         UserSensorIRInit   0x004d3a    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+    UserSensorIRProcessIO   0x004d92    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+     UserSensorIRReceived   0x004dd2    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+      UserSensorIRRelease   0x004d9a    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+             WriteCmdXLCD   0x004272    program     extern Z:\home\andres\u4a2\user\usr_display.c
+            WriteDataXLCD   0x004322    program     extern Z:\home\andres\u4a2\user\usr_display.c
+       _D10KTCYXCODE_0010   0x002c32    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x002c3e    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+        _D1KTCYXCODE_0010   0x002c60    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x002c66    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+      ___case_-1_lbl00010   0x0041d4    program     static                          
+      ___case_-1_lbl00011   0x003f62    program     static                          
+      ___case_-1_lbl00011   0x003c42    program     static                          
+      ___case_-1_lbl00013   0x003922    program     static                          
+      ___case_-1_lbl00013   0x004f02    program     static                          
+      ___case_-1_lbl00017   0x001066    program     static                          
+      ___case_-1_lbl00024   0x0035ec    program     static                          
+      ___case_-1_lbl00049   0x0057cc    program     static                          
+      ___case_-1_lbl00055   0x004bfa    program     static                          
+       ___case_0_lbl00003   0x000ddc    program     static                          
+       ___case_0_lbl00008   0x003b10    program     static                          
+       ___case_0_lbl00008   0x003e30    program     static                          
+       ___case_0_lbl00008   0x004142    program     static                          
+       ___case_0_lbl00009   0x00376c    program     static                          
+       ___case_0_lbl00011   0x004e30    program     static                          
+       ___case_0_lbl00020   0x00343e    program     static                          
+       ___case_0_lbl00030   0x005286    program     static                          
+       ___case_0_lbl00041   0x0045e2    program     static                          
+      ___case_16_lbl00035   0x005480    program     static                          
+      ___case_17_lbl00037   0x00552a    program     static                          
+      ___case_18_lbl00039   0x0055ae    program     static                          
+      ___case_19_lbl00043   0x005642    program     static                          
+       ___case_1_lbl00006   0x000eda    program     static                          
+       ___case_1_lbl00009   0x0041c0    program     static                          
+       ___case_1_lbl00009   0x003eae    program     static                          
+       ___case_1_lbl00009   0x003b8e    program     static                          
+       ___case_1_lbl00011   0x00385e    program     static                          
+       ___case_1_lbl00012   0x004eae    program     static                          
+       ___case_1_lbl00021   0x0034bc    program     static                          
+       ___case_1_lbl00031   0x005306    program     static                          
+       ___case_1_lbl00042   0x004662    program     static                          
+      ___case_21_lbl00046   0x005694    program     static                          
+      ___case_22_lbl00047   0x0056fc    program     static                          
+      ___case_23_lbl00048   0x005764    program     static                          
+       ___case_2_lbl00008   0x000f3a    program     static                          
+       ___case_2_lbl00010   0x003be8    program     static                          
+       ___case_2_lbl00010   0x003f08    program     static                          
+       ___case_2_lbl00012   0x0038b8    program     static                          
+       ___case_2_lbl00022   0x003516    program     static                          
+       ___case_2_lbl00032   0x005348    program     static                          
+       ___case_2_lbl00050   0x0048bc    program     static                          
+       ___case_3_lbl00009   0x000f40    program     static                          
+       ___case_3_lbl00010   0x0037ea    program     static                          
+       ___case_3_lbl00023   0x003570    program     static                          
+       ___case_3_lbl00034   0x005418    program     static                          
+       ___case_3_lbl00051   0x004a7c    program     static                          
+       ___case_4_lbl00010   0x000f46    program     static                          
+       ___case_4_lbl00036   0x0054e8    program     static                          
+       ___case_4_lbl00052   0x004ae6    program     static                          
+       ___case_5_lbl00011   0x0041d8    program     static                          
+       ___case_5_lbl00011   0x000f4c    program     static                          
+       ___case_5_lbl00012   0x003fbc    program     static                          
+       ___case_5_lbl00012   0x003c9c    program     static                          
+       ___case_5_lbl00014   0x004f06    program     static                          
+       ___case_5_lbl00014   0x00397c    program     static                          
+       ___case_5_lbl00025   0x0035f0    program     static                          
+       ___case_5_lbl00050   0x0057d0    program     static                          
+       ___case_5_lbl00056   0x004bfe    program     static                          
+       ___case_6_lbl00012   0x000f7a    program     static                          
+       ___case_6_lbl00038   0x00556c    program     static                          
+       ___case_7_lbl00007   0x000f24    program     static                          
+       ___case_7_lbl00040   0x0055f0    program     static                          
+       ___case_8_lbl00016   0x00101c    program     static                          
+       ___case_8_lbl00053   0x004b40    program     static                          
+       ___case_9_lbl00033   0x0053b0    program     static                          
+       ___case_9_lbl00054   0x004b9c    program     static                          
+      ___default_lbl00012   0x0041f4    program     static                          
+      ___default_lbl00013   0x00402e    program     static                          
+      ___default_lbl00013   0x003d0e    program     static                          
+      ___default_lbl00015   0x004f22    program     static                          
+      ___default_lbl00015   0x0039ee    program     static                          
+      ___default_lbl00020   0x001088    program     static                          
+      ___default_lbl00026   0x00360c    program     static                          
+      ___default_lbl00051   0x0057e8    program     static                          
+         ___else_lbl00005   0x000ebe    program     static                          
+         ___else_lbl00048   0x0047aa    program     static                          
+          ___for_lbl00013   0x001010    program     static                          
+          ___for_lbl00014   0x001016    program     static                          
+          ___for_lbl00015   0x000fba    program     static                          
+          ___for_lbl00043   0x004860    program     static                          
+          ___for_lbl00044   0x00486c    program     static                          
+          ___for_lbl00049   0x0046be    program     static                          
+           ___if_lbl00004   0x000eca    program     static                          
+           ___if_lbl00013   0x004214    program     static                          
+           ___if_lbl00014   0x003d2e    program     static                          
+           ___if_lbl00014   0x00404e    program     static                          
+           ___if_lbl00014   0x004214    program     static                          
+           ___if_lbl00015   0x00404e    program     static                          
+           ___if_lbl00015   0x003d2e    program     static                          
+           ___if_lbl00016   0x003a0e    program     static                          
+           ___if_lbl00016   0x004f42    program     static                          
+           ___if_lbl00017   0x004f42    program     static                          
+           ___if_lbl00017   0x003a0e    program     static                          
+           ___if_lbl00021   0x0010a4    program     static                          
+           ___if_lbl00022   0x0010a4    program     static                          
+           ___if_lbl00027   0x00362c    program     static                          
+           ___if_lbl00028   0x00362c    program     static                          
+           ___if_lbl00042   0x005636    program     static                          
+           ___if_lbl00045   0x0047a8    program     static                          
+           ___if_lbl00045   0x005688    program     static                          
+           ___if_lbl00046   0x004860    program     static                          
+           ___if_lbl00047   0x004860    program     static                          
+           ___if_lbl00052   0x005808    program     static                          
+           ___if_lbl00053   0x005808    program     static                          
+           ___if_lbl00057   0x004c38    program     static                          
+           ___if_lbl00058   0x004c38    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x00424c    program     static                          
+       ___return_lbl00000   0x000804    program     static                          
+       ___return_lbl00001   0x002c8a    program     static                          
+       ___return_lbl00001   0x0010a4    program     static                          
+       ___return_lbl00001   0x00080c    program     static                          
+       ___return_lbl00002   0x002c20    program     static                          
+       ___return_lbl00006   0x00404e    program     static                          
+       ___return_lbl00006   0x003d2e    program     static                          
+       ___return_lbl00006   0x004214    program     static                          
+       ___return_lbl00007   0x003a0e    program     static                          
+       ___return_lbl00009   0x004f42    program     static                          
+       ___return_lbl00018   0x00362c    program     static                          
+       ___return_lbl00028   0x005808    program     static                          
+       ___return_lbl00039   0x004c38    program     static                          
+       ___return_lbl00042   0x001928    program     static                          
+   ___switchexit_lbl00002   0x00108a    program     static                          
+   ___switchexit_lbl00007   0x003d10    program     static                          
+   ___switchexit_lbl00007   0x004030    program     static                          
+   ___switchexit_lbl00007   0x0041f6    program     static                          
+   ___switchexit_lbl00008   0x0039f0    program     static                          
+   ___switchexit_lbl00010   0x004f24    program     static                          
+   ___switchexit_lbl00019   0x00360e    program     static                          
+   ___switchexit_lbl00029   0x0057ea    program     static                          
+   ___switchexit_lbl00040   0x004c1a    program     static                          
+        ___while_lbl00018   0x00106e    program     static                          
+        ___while_lbl00019   0x001080    program     static                          
+        ___while_lbl00043   0x00191a    program     static                          
+        ___while_lbl00044   0x001928    program     static                          
+                   __init   0x002c9a    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+                   __pa_0   0x00596c    program     static Z:\home\andres\u4a2\user\testT0Service.c
+                   __pa_0   0x0022dc    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_0   0x001d7e    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_0   0x001b22    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_0   0x00178e    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                   __pa_0   0x004c4c    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_0   0x001568    program     static Z:\home\andres\u4a2\user\dynamicPolling.c
+                   __pa_0   0x0013ba    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_0   0x00581c    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_0   0x001f94    program     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                   __pa_0   0x002a44    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_0   0x0032ba    program     static Z:\home\andres\u4a2\user\userLoopBack.c
+                   __pa_0   0x003640    program     static Z:\home\andres\u4a2\user\usr_buzzer.c
+                   __pa_1   0x00597e    program     static Z:\home\andres\u4a2\user\testT0Service.c
+                   __pa_1   0x002a58    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_1   0x0022f0    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_1   0x001d96    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_1   0x001b32    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_1   0x0017a2    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                   __pa_1   0x00364a    program     static Z:\home\andres\u4a2\user\usr_buzzer.c
+                   __pa_1   0x004c56    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_1   0x00157c    program     static Z:\home\andres\u4a2\user\dynamicPolling.c
+                   __pa_1   0x0013d4    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_1   0x001fa8    program     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                   __pa_1   0x00582a    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_1   0x0032c4    program     static Z:\home\andres\u4a2\user\userLoopBack.c
+                  __pa_10   0x004cd2    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_10   0x0058bc    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_10   0x001468    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                  __pa_10   0x002ae8    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_10   0x0023c0    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_11   0x0058c8    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_11   0x004ce2    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_11   0x002af0    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_11   0x0023d4    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_12   0x0023dc    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_12   0x0058d6    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_12   0x002af8    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_12   0x004cf0    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_13   0x002b02    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_13   0x004cfa    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_13   0x0023ea    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_13   0x0058e8    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_14   0x002b0e    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_14   0x0058f2    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_14   0x004d04    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_14   0x0023f6    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_15   0x0058fa    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_15   0x002400    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_15   0x002b18    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_15   0x004d0c    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_16   0x004d16    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_16   0x002b22    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_16   0x00240a    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_16   0x005902    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_17   0x002448    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_17   0x00590a    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_17   0x004d26    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_17   0x002b28    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_18   0x004d30    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_18   0x002b32    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_18   0x00245a    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_18   0x005912    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_19   0x002b3e    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_19   0x00246c    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_19   0x00591a    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_2   0x001b42    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_2   0x0017ac    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                   __pa_2   0x004c70    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_2   0x001da8    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_2   0x001590    program     static Z:\home\andres\u4a2\user\dynamicPolling.c
+                   __pa_2   0x001fbc    program     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                   __pa_2   0x0013ee    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_2   0x005832    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_2   0x00230a    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_2   0x002a6c    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_2   0x005990    program     static Z:\home\andres\u4a2\user\testT0Service.c
+                  __pa_20   0x00247e    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_20   0x002b4a    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_21   0x002488    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_21   0x002b50    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_22   0x002b5a    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_22   0x002498    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_23   0x0024a6    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_23   0x002b66    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_24   0x0024b0    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_24   0x002b72    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_25   0x0024b8    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_25   0x002b7e    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_3   0x002a74    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_3   0x002332    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_3   0x001b50    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_3   0x001dba    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_3   0x0017b4    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                   __pa_3   0x001598    program     static Z:\home\andres\u4a2\user\dynamicPolling.c
+                   __pa_3   0x001fca    program     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                   __pa_3   0x0013fc    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_3   0x004c7a    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_3   0x00583c    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_4   0x001404    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_4   0x005846    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_4   0x001dca    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_4   0x004c84    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_4   0x001b5e    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_4   0x00234e    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_4   0x002a84    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_5   0x00141e    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_5   0x00585c    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_5   0x001b66    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_5   0x00236c    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_5   0x002a8e    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_5   0x001dd8    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_5   0x004c92    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_6   0x004c9a    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_6   0x002376    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_6   0x001430    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_6   0x005872    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_6   0x002aaa    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_6   0x001de2    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_7   0x004ca4    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_7   0x001dea    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_7   0x002aba    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_7   0x001438    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_7   0x005886    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_7   0x00237e    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_8   0x001446    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_8   0x00239a    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_8   0x004cb6    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_8   0x002ac8    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_8   0x005898    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_9   0x001458    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_9   0x004cc8    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_9   0x002adc    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_9   0x0023b6    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_9   0x0058aa    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+               __tmplbl_2   0x005632    program     static                          
+               __tmplbl_3   0x004c56    program     static                          
+               __tmplbl_3   0x00562c    program     static                          
+               __tmplbl_4   0x004c56    program     static                          
+               __tmplbl_4   0x005684    program     static                          
+               __tmplbl_5   0x004d04    program     static                          
+               __tmplbl_5   0x00567e    program     static                          
+               __tmplbl_6   0x004c56    program     static                          
+               __tmplbl_6   0x005832    program     static                          
+               __tmplbl_7   0x004d04    program     static                          
+               __tmplbl_8   0x004d04    program     static                          
+               __tmplbl_8   0x0058fa    program     static                          
+               __tmplbl_9   0x0058fa    program     static                          
+            __zero_memory   0x002c8c    program     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                _do_cinit   0x002b84    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                _high_ISR   0x000808    program     extern Z:\home\andres\u4a2\main.c
+                 _low_ISR   0x000818    program     extern Z:\home\andres\u4a2\main.c
+                   _reset   0x000800    program     extern Z:\home\andres\u4a2\main.c
+                 _startup   0x002c70    program     extern C:\MCC18\src\traditional\startup\c018i.c
+           addISRFunction   0x001e12    program     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+       addPollingFunction   0x001488    program     extern Z:\home\andres\u4a2\user\dynamicPolling.c
+            addT0Function   0x001644    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+          adminModuleInit   0x000d3e    program     extern Z:\home\andres\u4a2\user\adminModule.c
+            adminReceived   0x000d6c    program     extern Z:\home\andres\u4a2\user\adminModule.c
+               blinkEvent   0x0036de    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+                    cfg01   0x000a52    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+    checkHandlerManagerIO   0x0024dc    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+               clear_loop   0x002c92    program     static C:\MCC18\src\traditional\proc\p18F4550.asm
+              commandXLCD   0x00435c    program     extern Z:\home\andres\u4a2\user\usr_display.c
+                 configT0   0x00172a    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+configureHandlerTableEntry   0x002898    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+                copy_loop   0x002bf6    program     static                          
+            copy_one_byte   0x002bfc    program     static                          
+               device_dsc   0x000a40    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+              displayInit   0x00436e    program     extern Z:\home\andres\u4a2\user\usr_display.c
+                     done   0x002c20    program     static                          
+             done_copying   0x002c0a    program     static                          
+         existsTableEntry   0x002764    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+         getAdminEndpoint   0x0015a6    program     extern Z:\home\andres\u4a2\user\descriptorManager.c
+              getEPSizeIN   0x002a3c    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+             getEPSizeOUT   0x002a34    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+getModuleConfigureDirection   0x0013a4    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+   getModuleInitDirection   0x001380    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+            getModuleName   0x0012d8    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+getModuleReleaseDirection   0x00138e    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+          getSharedBuffer   0x0029c8    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+    getUserTableDirection   0x0011be    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+         getUserTableSize   0x0012a0    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+                get_first   0x002012    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+       initHandlerManager   0x0027e4    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+         initHandlerTable   0x002794    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+         initISRFunctions   0x001df2    program     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+     initPollingFunctions   0x001472    program     extern Z:\home\andres\u4a2\user\dynamicPolling.c
+          initT0Functions   0x001626    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+            initT0Service   0x002090    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+        interrupt_handler   0x002236    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+             interruption   0x001ec0    program     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                  isEqual   0x001164    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+                 is_empty   0x002006    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+               loadModule   0x00115e    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+                     loop   0x002c80    program     static                          
+                     main   0x0015e0    program     extern Z:\home\andres\u4a2\main.c
+     newHandlerTableEntry   0x002736    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+               next_entry   0x001fd6    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  polling   0x00152a    program     extern Z:\home\andres\u4a2\user\dynamicPolling.c
+                pop_first   0x00202e    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+            prender_corto   0x00333c    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+               prev_entry   0x001fec    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                 push_end   0x00203c    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                 putsXLCD   0x004332    program     extern Z:\home\andres\u4a2\user\usr_display.c
+          registerT0event   0x0020c6    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+   registerT0eventInEvent   0x00218e    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+            regulateMotor   0x005080    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+     removeAllOpenModules   0x00290c    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+  removeHandlerTableEntry   0x0027ea    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+        removeISRFunction   0x001e66    program     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+    removePoolingFunction   0x0014d4    program     extern Z:\home\andres\u4a2\user\dynamicPolling.c
+         removeT0Function   0x0016b8    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                    sd000   0x000a8e    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+                    sd001   0x000a92    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+                    sd002   0x000ac4    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+                    sd003   0x000aee    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+                  sendMes   0x0010b8    program     extern Z:\home\andres\u4a2\user\adminModule.c
+  setHandlerReceiveBuffer   0x0024c0    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+setHandlerReceiveFunction   0x0024ce    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+              setupMotors   0x004f56    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+                stepMotor   0x004ff0    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+              t0Interrupt   0x00173e    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                     test   0x002b9e    program     static                          
+        unregisterT0event   0x0021f6    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+unsetHandlerReceiveBuffer   0x0024c6    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+unsetHandlerReceiveFunction   0x0024d4    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+    userBuzzerModuleTable   0x00300e    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+   userDisplayModuleTable   0x003054    program     extern Z:\home\andres\u4a2\user\usr_display.c
+userLedAmarilloModuleTable   0x00301c    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+   userLedRojoModuleTable   0x00302a    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+  userLedVerdeModuleTable   0x003038    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+    userPuertaModuleTable   0x003046    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+  userSensorIRModuleTable   0x003062    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               CCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  CCP1DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              CCP1DELbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              CtrlTrfData   0x000428       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                     DDRA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+            DelayCounter1   0x000014       data     extern C:\MCC18\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x000013       data     extern C:\MCC18\src\traditional\delays\delayd2.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 ECCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+             ECCP1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 ECCP1DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+             ECCP1DELbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+     HandlerReceiveBuffer   0x0000a4       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+                    INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              ISRFunction   0x000153       data     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+             ISRListeners   0x00015d       data     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                     LATA   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+          MotorTmrHandler   0x0000fb       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     SIGN   0x000009       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SPPCFG   0x000f63       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               SPPCFGbits   0x000f63       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SPPCON   0x000f65       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               SPPCONbits   0x000f65       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  SPPDATA   0x000f62       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SPPEPS   0x000f64       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               SPPEPSbits   0x000f64       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 SetupPkt   0x000420       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UADDR   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UADDRbits   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UCFG   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UCFGbits   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UCON   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UCONbits   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEIE   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEIEbits   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEIR   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEIRbits   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP0   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP0bits   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP1   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP10   0x000f7a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP10bits   0x000f7a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP11   0x000f7b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP11bits   0x000f7b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP12   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP12bits   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP13   0x000f7d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP13bits   0x000f7d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP14   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP14bits   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP15   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP15bits   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP1bits   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP2   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP2bits   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP3   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP3bits   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP4   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP4bits   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP5   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP5bits   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP6   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP6bits   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP7   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP7bits   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP8   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP8bits   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP9   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP9bits   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UFRM   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UFRMH   0x000f67       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UFRMHbits   0x000f67       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UFRML   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UFRMLbits   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      UIE   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  UIEbits   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      UIR   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  UIRbits   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    USTAT   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                USTATbits   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 __AARGB0   0x000007       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB7   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                __FPFLAGS   0x00000a       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000a       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                  __REMB0   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB3   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\descriptorManager.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\dynamicPolling.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\loaderModule.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\adminModule.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\usr_display.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __tmp_1   0x000011       data     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+             adminHandler   0x000182       data     extern Z:\home\andres\u4a2\user\adminModule.c
+           blinkFrecuency   0x0001a3       data     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+              counter_big   0x000183       data     extern Z:\home\andres\u4a2\user\adminModule.c
+   ctrl_trf_session_owner   0x000173       data     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+           ctrl_trf_state   0x000172       data     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                curr_byte   0x00016b       data     static C:\MCC18\src\traditional\startup\c018i.c
+               curr_entry   0x00016d       data     static C:\MCC18\src\traditional\startup\c018i.c
+                 data_ptr   0x00016f       data     static C:\MCC18\src\traditional\startup\c018i.c
+              delay_count   0x0000fe       data     static Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+             display_init   0x0001a4       data     extern Z:\home\andres\u4a2\user\usr_display.c
+                    ep0Bi   0x000404       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep0Bo   0x000400       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep1Bi   0x00040c       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep1Bo   0x000408       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+            ep1_in_buffer   0x000470       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+           ep1_out_buffer   0x000430       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep2Bi   0x000414       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep2Bo   0x000410       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+            ep2_in_buffer   0x0004f0       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+           ep2_out_buffer   0x0004b0       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep3Bi   0x00041c       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep3Bo   0x000418       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+            ep3_in_buffer   0x000570       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+           ep3_out_buffer   0x000530       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+             epHandlerMap   0x000061       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+                 epInSize   0x00017d       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                epOutSize   0x00017a       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    first   0x0001a1       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+   handlerReceivedFuncion   0x0000c4       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+       hmDataPacketHeader   0x0000a1       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+                hn_opType   0x0000e4       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+          max_step_length   0x000140       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.h
+                   motorA   0x0000e5       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   motorB   0x0000f0       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+                     next   0x0001a2       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                     pDst   0x000176       data     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                     pSrc   0x000174       data     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+               phaseArray   0x000128       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.h
+          pollingFunction   0x00015e       data     extern Z:\home\andres\u4a2\user\dynamicPolling.c
+                     prom   0x000168       data     static C:\MCC18\src\traditional\startup\c018i.c
+                    queue   0x000100       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+        ram_max_ep_number   0x000060       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+          sendBufferAdmin   0x000180       data     extern Z:\home\andres\u4a2\user\adminModule.c
+       sendBufferMotorTmr   0x0000fc       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+      sendBufferUsrBuzzer   0x00019c       data     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+     sendBufferUsrDisplay   0x000199       data     extern Z:\home\andres\u4a2\user\usr_display.c
+ sendBufferUsrLedAmarillo   0x000196       data     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+     sendBufferUsrLedRojo   0x000193       data     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+    sendBufferUsrLedVerde   0x000190       data     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+    sendBufferUsrLoopback   0x00019f       data     extern Z:\home\andres\u4a2\user\userLoopBack.c
+      sendBufferUsrPuerta   0x00018d       data     extern Z:\home\andres\u4a2\user\usr_puerta.c
+    sendBufferUsrSensorIR   0x00018a       data     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+    step_regulation_delay   0x000142       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.h
+step_regulation_increment   0x000144       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.h
+               t0Function   0x000146       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+              t0Listeners   0x000150       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+               t0LoadHigh   0x000151       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                t0LoadLow   0x000152       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+           usb_active_cfg   0x000187       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+             usb_alt_intf   0x000188       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+         usb_device_state   0x000185       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                 usb_stat   0x000186       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+         usrBuzzerHandler   0x00019b       data     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+        usrDisplayHandler   0x000198       data     extern Z:\home\andres\u4a2\user\usr_display.c
+    usrLedAmarilloHandler   0x000195       data     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+        usrLedRojoHandler   0x000192       data     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+       usrLedVerdeHandler   0x00018f       data     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+       usrLoopbackHandler   0x00019e       data     extern Z:\home\andres\u4a2\user\userLoopBack.c
+         usrPuertaHandler   0x00018c       data     extern Z:\home\andres\u4a2\user\usr_puerta.c
+       usrSensorIRHandler   0x000189       data     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+                   wCount   0x000178       data     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                   _reset   0x000800    program     extern Z:\home\andres\u4a2\main.c
+       ___return_lbl00000   0x000804    program     static                          
+                _high_ISR   0x000808    program     extern Z:\home\andres\u4a2\main.c
+       ___return_lbl00001   0x00080c    program     static                          
+                 _low_ISR   0x000818    program     extern Z:\home\andres\u4a2\main.c
+        ROM_MAX_EP_NUMBER   0x000840    program     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+               USBInitEPs   0x000842    program     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+               device_dsc   0x000a40    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+                    cfg01   0x000a52    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+                    sd000   0x000a8e    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+                    sd001   0x000a92    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+                    sd002   0x000ac4    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+                    sd003   0x000aee    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+               USB_CD_Ptr   0x000c40    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+               USB_SD_Ptr   0x000c80    program     extern Z:\home\andres\u4a2\usb4all\usbconf\desc\usbdsc.c
+          adminModuleInit   0x000d3e    program     extern Z:\home\andres\u4a2\user\adminModule.c
+            adminReceived   0x000d6c    program     extern Z:\home\andres\u4a2\user\adminModule.c
+       ___case_0_lbl00003   0x000ddc    program     static                          
+         ___else_lbl00005   0x000ebe    program     static                          
+           ___if_lbl00004   0x000eca    program     static                          
+       ___case_1_lbl00006   0x000eda    program     static                          
+       ___case_7_lbl00007   0x000f24    program     static                          
+       ___case_2_lbl00008   0x000f3a    program     static                          
+       ___case_3_lbl00009   0x000f40    program     static                          
+       ___case_4_lbl00010   0x000f46    program     static                          
+       ___case_5_lbl00011   0x000f4c    program     static                          
+       ___case_6_lbl00012   0x000f7a    program     static                          
+          ___for_lbl00015   0x000fba    program     static                          
+          ___for_lbl00013   0x001010    program     static                          
+          ___for_lbl00014   0x001016    program     static                          
+       ___case_8_lbl00016   0x00101c    program     static                          
+      ___case_-1_lbl00017   0x001066    program     static                          
+        ___while_lbl00018   0x00106e    program     static                          
+        ___while_lbl00019   0x001080    program     static                          
+      ___default_lbl00020   0x001088    program     static                          
+   ___switchexit_lbl00002   0x00108a    program     static                          
+           ___if_lbl00022   0x0010a4    program     static                          
+           ___if_lbl00021   0x0010a4    program     static                          
+       ___return_lbl00001   0x0010a4    program     static                          
+                  sendMes   0x0010b8    program     extern Z:\home\andres\u4a2\user\adminModule.c
+               loadModule   0x00115e    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+                  isEqual   0x001164    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+    getUserTableDirection   0x0011be    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+         getUserTableSize   0x0012a0    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+            getModuleName   0x0012d8    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+   getModuleInitDirection   0x001380    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+getModuleReleaseDirection   0x00138e    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+getModuleConfigureDirection   0x0013a4    program     extern Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_0   0x0013ba    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_1   0x0013d4    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_2   0x0013ee    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_3   0x0013fc    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_4   0x001404    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_5   0x00141e    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_6   0x001430    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_7   0x001438    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_8   0x001446    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                   __pa_9   0x001458    program     static Z:\home\andres\u4a2\user\loaderModule.c
+                  __pa_10   0x001468    program     static Z:\home\andres\u4a2\user\loaderModule.c
+     initPollingFunctions   0x001472    program     extern Z:\home\andres\u4a2\user\dynamicPolling.c
+       addPollingFunction   0x001488    program     extern Z:\home\andres\u4a2\user\dynamicPolling.c
+    removePoolingFunction   0x0014d4    program     extern Z:\home\andres\u4a2\user\dynamicPolling.c
+                  polling   0x00152a    program     extern Z:\home\andres\u4a2\user\dynamicPolling.c
+                   __pa_0   0x001568    program     static Z:\home\andres\u4a2\user\dynamicPolling.c
+                   __pa_1   0x00157c    program     static Z:\home\andres\u4a2\user\dynamicPolling.c
+                   __pa_2   0x001590    program     static Z:\home\andres\u4a2\user\dynamicPolling.c
+                   __pa_3   0x001598    program     static Z:\home\andres\u4a2\user\dynamicPolling.c
+         getAdminEndpoint   0x0015a6    program     extern Z:\home\andres\u4a2\user\descriptorManager.c
+                     main   0x0015e0    program     extern Z:\home\andres\u4a2\main.c
+         InitializeSystem   0x0015ee    program     static Z:\home\andres\u4a2\main.c
+                 USBTasks   0x001618    program     extern Z:\home\andres\u4a2\main.c
+          initT0Functions   0x001626    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+            addT0Function   0x001644    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+         removeT0Function   0x0016b8    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                 configT0   0x00172a    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+              t0Interrupt   0x00173e    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                   __pa_0   0x00178e    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                   __pa_1   0x0017a2    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                   __pa_2   0x0017ac    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                   __pa_3   0x0017b4    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+        USBCheckBusStatus   0x0017c2    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+          USBModuleEnable   0x0017de    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+         USBModuleDisable   0x0017ec    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+            USBSoftDetach   0x0017f6    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+         USBDriverService   0x0017fa    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+               USBSuspend   0x001878    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+       USBWakeFromSuspend   0x001880    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+          USBRemoteWakeup   0x001888    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+          USB_SOF_Handler   0x0018ac    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+          USBStallHandler   0x0018b0    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+          USBErrorHandler   0x0018be    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+  USBProtocolResetHandler   0x0018c2    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+               ClearArray   0x001906    program     extern Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+        ___while_lbl00043   0x00191a    program     static                          
+        ___while_lbl00044   0x001928    program     static                          
+       ___return_lbl00042   0x001928    program     static                          
+         USBCtrlEPService   0x001930    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+   USBCtrlTrfSetupHandler   0x001954    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+     USBCtrlTrfOutHandler   0x001972    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+      USBCtrlTrfInHandler   0x001990    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+      USBCtrlTrfTxService   0x0019c6    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+      USBCtrlTrfRxService   0x001a4c    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+ USBCtrlEPServiceComplete   0x001aa0    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+USBPrepareForNextSetupTrf   0x001b12    program     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_0   0x001b22    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_1   0x001b32    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_2   0x001b42    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_3   0x001b50    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_4   0x001b5e    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   __pa_5   0x001b66    program     static Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+       USBCheckStdRequest   0x001b76    program     extern Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+      USBStdGetDscHandler   0x001c14    program     extern Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+      USBStdSetCfgHandler   0x001c82    program     extern Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+   USBStdGetStatusHandler   0x001cb8    program     extern Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+  USBStdFeatureReqHandler   0x001d1c    program     extern Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_0   0x001d7e    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_1   0x001d96    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_2   0x001da8    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_3   0x001dba    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_4   0x001dca    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_5   0x001dd8    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_6   0x001de2    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                   __pa_7   0x001dea    program     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+         initISRFunctions   0x001df2    program     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+           addISRFunction   0x001e12    program     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+        removeISRFunction   0x001e66    program     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+             interruption   0x001ec0    program     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                   __pa_0   0x001f94    program     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                   __pa_1   0x001fa8    program     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                   __pa_2   0x001fbc    program     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                   __pa_3   0x001fca    program     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+               next_entry   0x001fd6    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+               prev_entry   0x001fec    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                 is_empty   0x002006    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                get_first   0x002012    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                pop_first   0x00202e    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                 push_end   0x00203c    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+            initT0Service   0x002090    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+          registerT0event   0x0020c6    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+   registerT0eventInEvent   0x00218e    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+        unregisterT0event   0x0021f6    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+        interrupt_handler   0x002236    program     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_0   0x0022dc    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_1   0x0022f0    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_2   0x00230a    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_3   0x002332    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_4   0x00234e    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_5   0x00236c    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_6   0x002376    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_7   0x00237e    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_8   0x00239a    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                   __pa_9   0x0023b6    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_10   0x0023c0    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_11   0x0023d4    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_12   0x0023dc    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_13   0x0023ea    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_14   0x0023f6    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_15   0x002400    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_16   0x00240a    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_17   0x002448    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_18   0x00245a    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_19   0x00246c    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_20   0x00247e    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_21   0x002488    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_22   0x002498    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_23   0x0024a6    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_24   0x0024b0    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __pa_25   0x0024b8    program     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+  setHandlerReceiveBuffer   0x0024c0    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+unsetHandlerReceiveBuffer   0x0024c6    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+setHandlerReceiveFunction   0x0024ce    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+unsetHandlerReceiveFunction   0x0024d4    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+    checkHandlerManagerIO   0x0024dc    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+              USBGenRead2   0x0024e6    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+             USBGenWrite2   0x002662    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+     newHandlerTableEntry   0x002736    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+         existsTableEntry   0x002764    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+         initHandlerTable   0x002794    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+       initHandlerManager   0x0027e4    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+  removeHandlerTableEntry   0x0027ea    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+configureHandlerTableEntry   0x002898    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+     removeAllOpenModules   0x00290c    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+          getSharedBuffer   0x0029c8    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+             getEPSizeOUT   0x002a34    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+              getEPSizeIN   0x002a3c    program     extern Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_0   0x002a44    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_1   0x002a58    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_2   0x002a6c    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_3   0x002a74    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_4   0x002a84    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_5   0x002a8e    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_6   0x002aaa    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_7   0x002aba    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_8   0x002ac8    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                   __pa_9   0x002adc    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_10   0x002ae8    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_11   0x002af0    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_12   0x002af8    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_13   0x002b02    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_14   0x002b0e    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_15   0x002b18    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_16   0x002b22    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_17   0x002b28    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_18   0x002b32    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_19   0x002b3e    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_20   0x002b4a    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_21   0x002b50    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_22   0x002b5a    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_23   0x002b66    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_24   0x002b72    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __pa_25   0x002b7e    program     static Z:\home\andres\u4a2\user\handlerManager.c
+                _do_cinit   0x002b84    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     test   0x002b9e    program     static                          
+                copy_loop   0x002bf6    program     static                          
+            copy_one_byte   0x002bfc    program     static                          
+             done_copying   0x002c0a    program     static                          
+       ___return_lbl00002   0x002c20    program     static                          
+                     done   0x002c20    program     static                          
+             Delay10KTCYx   0x002c22    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x002c2c    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x002c2e    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x002c32    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x002c3a    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x002c3e    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+              Delay1KTCYx   0x002c50    program     extern C:\MCC18\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x002c5a    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x002c5c    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x002c60    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x002c66    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+                 _startup   0x002c70    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     loop   0x002c80    program     static                          
+       ___return_lbl00001   0x002c8a    program     static                          
+            __zero_memory   0x002c8c    program     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               clear_loop   0x002c92    program     static C:\MCC18\src\traditional\proc\p18F4550.asm
+                   __init   0x002c9a    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+  UserLoopBackModuleTable   0x003000    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+    userBuzzerModuleTable   0x00300e    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+userLedAmarilloModuleTable   0x00301c    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+   userLedRojoModuleTable   0x00302a    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+  userLedVerdeModuleTable   0x003038    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+    userPuertaModuleTable   0x003046    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+   userDisplayModuleTable   0x003054    program     extern Z:\home\andres\u4a2\user\usr_display.c
+  userSensorIRModuleTable   0x003062    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+      MotorTmrModuleTable   0x003070    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+ TestT0ServiceModuleTable   0x00307e    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+         UserLoopBackInit   0x003182    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+    UserLoopBackConfigure   0x0031ca    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+    UserLoopBackProcessIO   0x0031cc    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+      UserLoopBackRelease   0x0031d4    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+     UserLoopBackReceived   0x003200    program     extern Z:\home\andres\u4a2\user\userLoopBack.c
+                   __pa_0   0x0032ba    program     static Z:\home\andres\u4a2\user\userLoopBack.c
+                   __pa_1   0x0032c4    program     static Z:\home\andres\u4a2\user\userLoopBack.c
+           UserBuzzerInit   0x0032cc    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+      UserBuzzerConfigure   0x003306    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+      UserBuzzerProcessIO   0x003308    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+        UserBuzzerRelease   0x003310    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+            prender_corto   0x00333c    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+       UserBuzzerReceived   0x0033d8    program     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+       ___case_0_lbl00020   0x00343e    program     static                          
+       ___case_1_lbl00021   0x0034bc    program     static                          
+       ___case_2_lbl00022   0x003516    program     static                          
+       ___case_3_lbl00023   0x003570    program     static                          
+      ___case_-1_lbl00024   0x0035ec    program     static                          
+       ___case_5_lbl00025   0x0035f0    program     static                          
+      ___default_lbl00026   0x00360c    program     static                          
+   ___switchexit_lbl00019   0x00360e    program     static                          
+           ___if_lbl00027   0x00362c    program     static                          
+       ___return_lbl00018   0x00362c    program     static                          
+           ___if_lbl00028   0x00362c    program     static                          
+                   __pa_0   0x003640    program     static Z:\home\andres\u4a2\user\usr_buzzer.c
+                   __pa_1   0x00364a    program     static Z:\home\andres\u4a2\user\usr_buzzer.c
+      UserLedAmarilloInit   0x003652    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+ UserLedAmarilloConfigure   0x00369c    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+ UserLedAmarilloProcessIO   0x00369e    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+   UserLedAmarilloRelease   0x0036a6    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+               blinkEvent   0x0036de    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+  UserLedAmarilloReceived   0x0036fe    program     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+       ___case_0_lbl00009   0x00376c    program     static                          
+       ___case_3_lbl00010   0x0037ea    program     static                          
+       ___case_1_lbl00011   0x00385e    program     static                          
+       ___case_2_lbl00012   0x0038b8    program     static                          
+      ___case_-1_lbl00013   0x003922    program     static                          
+       ___case_5_lbl00014   0x00397c    program     static                          
+      ___default_lbl00015   0x0039ee    program     static                          
+   ___switchexit_lbl00008   0x0039f0    program     static                          
+       ___return_lbl00007   0x003a0e    program     static                          
+           ___if_lbl00016   0x003a0e    program     static                          
+           ___if_lbl00017   0x003a0e    program     static                          
+          UserLedRojoInit   0x003a22    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+     UserLedRojoConfigure   0x003a68    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+     UserLedRojoProcessIO   0x003a6a    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+       UserLedRojoRelease   0x003a72    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+      UserLedRojoReceived   0x003aaa    program     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+       ___case_0_lbl00008   0x003b10    program     static                          
+       ___case_1_lbl00009   0x003b8e    program     static                          
+       ___case_2_lbl00010   0x003be8    program     static                          
+      ___case_-1_lbl00011   0x003c42    program     static                          
+       ___case_5_lbl00012   0x003c9c    program     static                          
+      ___default_lbl00013   0x003d0e    program     static                          
+   ___switchexit_lbl00007   0x003d10    program     static                          
+           ___if_lbl00015   0x003d2e    program     static                          
+       ___return_lbl00006   0x003d2e    program     static                          
+           ___if_lbl00014   0x003d2e    program     static                          
+         UserLedVerdeInit   0x003d42    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+    UserLedVerdeConfigure   0x003d88    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+    UserLedVerdeProcessIO   0x003d8a    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+      UserLedVerdeRelease   0x003d92    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+     UserLedVerdeReceived   0x003dca    program     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+       ___case_0_lbl00008   0x003e30    program     static                          
+       ___case_1_lbl00009   0x003eae    program     static                          
+       ___case_2_lbl00010   0x003f08    program     static                          
+      ___case_-1_lbl00011   0x003f62    program     static                          
+       ___case_5_lbl00012   0x003fbc    program     static                          
+      ___default_lbl00013   0x00402e    program     static                          
+   ___switchexit_lbl00007   0x004030    program     static                          
+           ___if_lbl00014   0x00404e    program     static                          
+           ___if_lbl00015   0x00404e    program     static                          
+       ___return_lbl00006   0x00404e    program     static                          
+           UserPuertaInit   0x004062    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+      UserPuertaConfigure   0x0040a8    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+      UserPuertaProcessIO   0x0040aa    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+        UserPuertaRelease   0x0040b2    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+       UserPuertaReceived   0x0040ea    program     extern Z:\home\andres\u4a2\user\usr_puerta.c
+       ___case_0_lbl00008   0x004142    program     static                          
+       ___case_1_lbl00009   0x0041c0    program     static                          
+      ___case_-1_lbl00010   0x0041d4    program     static                          
+       ___case_5_lbl00011   0x0041d8    program     static                          
+      ___default_lbl00012   0x0041f4    program     static                          
+   ___switchexit_lbl00007   0x0041f6    program     static                          
+       ___return_lbl00006   0x004214    program     static                          
+           ___if_lbl00013   0x004214    program     static                          
+           ___if_lbl00014   0x004214    program     static                          
+            DelayFor18TCY   0x004228    program     extern Z:\home\andres\u4a2\user\usr_display.c
+       ___return_lbl00000   0x00424c    program     static                          
+             DelayPORXLCD   0x00424e    program     extern Z:\home\andres\u4a2\user\usr_display.c
+                DelayXLCD   0x004254    program     extern Z:\home\andres\u4a2\user\usr_display.c
+                 BusyXLCD   0x00425a    program     extern Z:\home\andres\u4a2\user\usr_display.c
+             WriteCmdXLCD   0x004272    program     extern Z:\home\andres\u4a2\user\usr_display.c
+             SetDDRamAddr   0x004282    program     extern Z:\home\andres\u4a2\user\usr_display.c
+                 OpenXLCD   0x0042a2    program     extern Z:\home\andres\u4a2\user\usr_display.c
+            WriteDataXLCD   0x004322    program     extern Z:\home\andres\u4a2\user\usr_display.c
+                 putsXLCD   0x004332    program     extern Z:\home\andres\u4a2\user\usr_display.c
+              commandXLCD   0x00435c    program     extern Z:\home\andres\u4a2\user\usr_display.c
+              displayInit   0x00436e    program     extern Z:\home\andres\u4a2\user\usr_display.c
+          UserDisplayInit   0x0043d4    program     extern Z:\home\andres\u4a2\user\usr_display.c
+     UserDisplayConfigure   0x004532    program     extern Z:\home\andres\u4a2\user\usr_display.c
+     UserDisplayProcessIO   0x004534    program     extern Z:\home\andres\u4a2\user\usr_display.c
+       UserDisplayRelease   0x00453c    program     extern Z:\home\andres\u4a2\user\usr_display.c
+      UserDisplayReceived   0x00455e    program     extern Z:\home\andres\u4a2\user\usr_display.c
+       ___case_0_lbl00041   0x0045e2    program     static                          
+       ___case_1_lbl00042   0x004662    program     static                          
+          ___for_lbl00049   0x0046be    program     static                          
+           ___if_lbl00045   0x0047a8    program     static                          
+         ___else_lbl00048   0x0047aa    program     static                          
+           ___if_lbl00047   0x004860    program     static                          
+           ___if_lbl00046   0x004860    program     static                          
+          ___for_lbl00043   0x004860    program     static                          
+          ___for_lbl00044   0x00486c    program     static                          
+       ___case_2_lbl00050   0x0048bc    program     static                          
+       ___case_3_lbl00051   0x004a7c    program     static                          
+       ___case_4_lbl00052   0x004ae6    program     static                          
+       ___case_8_lbl00053   0x004b40    program     static                          
+       ___case_9_lbl00054   0x004b9c    program     static                          
+      ___case_-1_lbl00055   0x004bfa    program     static                          
+       ___case_5_lbl00056   0x004bfe    program     static                          
+   ___switchexit_lbl00040   0x004c1a    program     static                          
+       ___return_lbl00039   0x004c38    program     static                          
+           ___if_lbl00057   0x004c38    program     static                          
+           ___if_lbl00058   0x004c38    program     static                          
+                   __pa_0   0x004c4c    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_1   0x004c56    program     static Z:\home\andres\u4a2\user\usr_display.c
+               __tmplbl_6   0x004c56    program     static                          
+               __tmplbl_4   0x004c56    program     static                          
+               __tmplbl_3   0x004c56    program     static                          
+                   __pa_2   0x004c70    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_3   0x004c7a    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_4   0x004c84    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_5   0x004c92    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_6   0x004c9a    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_7   0x004ca4    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_8   0x004cb6    program     static Z:\home\andres\u4a2\user\usr_display.c
+                   __pa_9   0x004cc8    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_10   0x004cd2    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_11   0x004ce2    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_12   0x004cf0    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_13   0x004cfa    program     static Z:\home\andres\u4a2\user\usr_display.c
+               __tmplbl_5   0x004d04    program     static                          
+               __tmplbl_7   0x004d04    program     static                          
+               __tmplbl_8   0x004d04    program     static                          
+                  __pa_14   0x004d04    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_15   0x004d0c    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_16   0x004d16    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_17   0x004d26    program     static Z:\home\andres\u4a2\user\usr_display.c
+                  __pa_18   0x004d30    program     static Z:\home\andres\u4a2\user\usr_display.c
+         UserSensorIRInit   0x004d3a    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+             ReadSensorIR   0x004d88    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+    UserSensorIRConfigure   0x004d90    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+    UserSensorIRProcessIO   0x004d92    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+      UserSensorIRRelease   0x004d9a    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+     UserSensorIRReceived   0x004dd2    program     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+       ___case_0_lbl00011   0x004e30    program     static                          
+       ___case_1_lbl00012   0x004eae    program     static                          
+      ___case_-1_lbl00013   0x004f02    program     static                          
+       ___case_5_lbl00014   0x004f06    program     static                          
+      ___default_lbl00015   0x004f22    program     static                          
+   ___switchexit_lbl00010   0x004f24    program     static                          
+           ___if_lbl00017   0x004f42    program     static                          
+           ___if_lbl00016   0x004f42    program     static                          
+       ___return_lbl00009   0x004f42    program     static                          
+              setupMotors   0x004f56    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+             MotorTmrInit   0x004f98    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+                stepMotor   0x004ff0    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+            regulateMotor   0x005080    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+          MotorAStepEvent   0x005114    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+          MotorBStepEvent   0x005156    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+     MotorRegulationEvent   0x005196    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+          MotorTmrRelease   0x0051be    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+        MotorTmrConfigure   0x0051da    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+         MotorTmrReceived   0x0051dc    program     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+       ___case_0_lbl00030   0x005286    program     static                          
+       ___case_1_lbl00031   0x005306    program     static                          
+       ___case_2_lbl00032   0x005348    program     static                          
+       ___case_9_lbl00033   0x0053b0    program     static                          
+       ___case_3_lbl00034   0x005418    program     static                          
+      ___case_16_lbl00035   0x005480    program     static                          
+       ___case_4_lbl00036   0x0054e8    program     static                          
+      ___case_17_lbl00037   0x00552a    program     static                          
+       ___case_6_lbl00038   0x00556c    program     static                          
+      ___case_18_lbl00039   0x0055ae    program     static                          
+       ___case_7_lbl00040   0x0055f0    program     static                          
+               __tmplbl_3   0x00562c    program     static                          
+               __tmplbl_2   0x005632    program     static                          
+           ___if_lbl00042   0x005636    program     static                          
+      ___case_19_lbl00043   0x005642    program     static                          
+               __tmplbl_5   0x00567e    program     static                          
+               __tmplbl_4   0x005684    program     static                          
+           ___if_lbl00045   0x005688    program     static                          
+      ___case_21_lbl00046   0x005694    program     static                          
+      ___case_22_lbl00047   0x0056fc    program     static                          
+      ___case_23_lbl00048   0x005764    program     static                          
+      ___case_-1_lbl00049   0x0057cc    program     static                          
+       ___case_5_lbl00050   0x0057d0    program     static                          
+      ___default_lbl00051   0x0057e8    program     static                          
+   ___switchexit_lbl00029   0x0057ea    program     static                          
+           ___if_lbl00052   0x005808    program     static                          
+           ___if_lbl00053   0x005808    program     static                          
+       ___return_lbl00028   0x005808    program     static                          
+                   __pa_0   0x00581c    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_1   0x00582a    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+               __tmplbl_6   0x005832    program     static                          
+                   __pa_2   0x005832    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_3   0x00583c    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_4   0x005846    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_5   0x00585c    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_6   0x005872    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_7   0x005886    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_8   0x005898    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   __pa_9   0x0058aa    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_10   0x0058bc    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_11   0x0058c8    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_12   0x0058d6    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_13   0x0058e8    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_14   0x0058f2    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+               __tmplbl_8   0x0058fa    program     static                          
+                  __pa_15   0x0058fa    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+               __tmplbl_9   0x0058fa    program     static                          
+                  __pa_16   0x005902    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_17   0x00590a    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_18   0x005912    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __pa_19   0x00591a    program     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+        TestT0ServiceInit   0x005922    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+              TestT0Event   0x005946    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+             TestT0Event2   0x005952    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+     TestT0ServiceRelease   0x00595e    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+   TestT0ServiceConfigure   0x00596a    program     extern Z:\home\andres\u4a2\user\testT0Service.c
+                   __pa_0   0x00596c    program     static Z:\home\andres\u4a2\user\testT0Service.c
+                   __pa_1   0x00597e    program     static Z:\home\andres\u4a2\user\testT0Service.c
+                   __pa_2   0x005990    program     static Z:\home\andres\u4a2\user\testT0Service.c
+                  __REMB3   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB7   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB0   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB0   0x000007       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                     SIGN   0x000009       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x00000a       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000a       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\stepMotorTimer.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\usr_display.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\adminModule.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\handlerManager.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\loaderModule.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\dynamicPolling.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\system\usb\usb9\usb9.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\user\descriptorManager.c
+                  __tmp_0   0x00000b       data     static Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                  __tmp_1   0x000011       data     static Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+            DelayCounter2   0x000013       data     extern C:\MCC18\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x000014       data     extern C:\MCC18\src\traditional\delays\delayd1.asm
+        ram_max_ep_number   0x000060       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+             epHandlerMap   0x000061       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+       hmDataPacketHeader   0x0000a1       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+     HandlerReceiveBuffer   0x0000a4       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+   handlerReceivedFuncion   0x0000c4       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+                hn_opType   0x0000e4       data     extern Z:\home\andres\u4a2\user\handlerManager.c
+                   motorA   0x0000e5       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+                   motorB   0x0000f0       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+          MotorTmrHandler   0x0000fb       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+       sendBufferMotorTmr   0x0000fc       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.c
+              delay_count   0x0000fe       data     static Z:\home\andres\u4a2\system\usb\usbdrv\usbdrv.c
+                    queue   0x000100       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+               phaseArray   0x000128       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.h
+          max_step_length   0x000140       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.h
+    step_regulation_delay   0x000142       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.h
+step_regulation_increment   0x000144       data     extern Z:\home\andres\u4a2\user\stepMotorTimer.h
+               t0Function   0x000146       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+              t0Listeners   0x000150       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+               t0LoadHigh   0x000151       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+                t0LoadLow   0x000152       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Proxy.c
+              ISRFunction   0x000153       data     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+             ISRListeners   0x00015d       data     extern Z:\home\andres\u4a2\usb4all\dynamicISR\dynamicISR.c
+          pollingFunction   0x00015e       data     extern Z:\home\andres\u4a2\user\dynamicPolling.c
+                     prom   0x000168       data     static C:\MCC18\src\traditional\startup\c018i.c
+                curr_byte   0x00016b       data     static C:\MCC18\src\traditional\startup\c018i.c
+               curr_entry   0x00016d       data     static C:\MCC18\src\traditional\startup\c018i.c
+                 data_ptr   0x00016f       data     static C:\MCC18\src\traditional\startup\c018i.c
+           ctrl_trf_state   0x000172       data     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+   ctrl_trf_session_owner   0x000173       data     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                     pSrc   0x000174       data     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                     pDst   0x000176       data     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                   wCount   0x000178       data     extern Z:\home\andres\u4a2\system\usb\usbctrltrf\usbctrltrf.c
+                epOutSize   0x00017a       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                 epInSize   0x00017d       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+          sendBufferAdmin   0x000180       data     extern Z:\home\andres\u4a2\user\adminModule.c
+             adminHandler   0x000182       data     extern Z:\home\andres\u4a2\user\adminModule.c
+              counter_big   0x000183       data     extern Z:\home\andres\u4a2\user\adminModule.c
+         usb_device_state   0x000185       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                 usb_stat   0x000186       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+           usb_active_cfg   0x000187       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+             usb_alt_intf   0x000188       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+       usrSensorIRHandler   0x000189       data     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+    sendBufferUsrSensorIR   0x00018a       data     extern Z:\home\andres\u4a2\user\usr_sensorIR.c
+         usrPuertaHandler   0x00018c       data     extern Z:\home\andres\u4a2\user\usr_puerta.c
+      sendBufferUsrPuerta   0x00018d       data     extern Z:\home\andres\u4a2\user\usr_puerta.c
+       usrLedVerdeHandler   0x00018f       data     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+    sendBufferUsrLedVerde   0x000190       data     extern Z:\home\andres\u4a2\user\usr_led_verde.c
+        usrLedRojoHandler   0x000192       data     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+     sendBufferUsrLedRojo   0x000193       data     extern Z:\home\andres\u4a2\user\usr_led_rojo.c
+    usrLedAmarilloHandler   0x000195       data     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+ sendBufferUsrLedAmarillo   0x000196       data     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+        usrDisplayHandler   0x000198       data     extern Z:\home\andres\u4a2\user\usr_display.c
+     sendBufferUsrDisplay   0x000199       data     extern Z:\home\andres\u4a2\user\usr_display.c
+         usrBuzzerHandler   0x00019b       data     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+      sendBufferUsrBuzzer   0x00019c       data     extern Z:\home\andres\u4a2\user\usr_buzzer.c
+       usrLoopbackHandler   0x00019e       data     extern Z:\home\andres\u4a2\user\userLoopBack.c
+    sendBufferUsrLoopback   0x00019f       data     extern Z:\home\andres\u4a2\user\userLoopBack.c
+                    first   0x0001a1       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+                     next   0x0001a2       data     extern Z:\home\andres\u4a2\usb4all\proxys\T0Service.c
+           blinkFrecuency   0x0001a3       data     extern Z:\home\andres\u4a2\user\usr_led_amarillo.c
+             display_init   0x0001a4       data     extern Z:\home\andres\u4a2\user\usr_display.c
+                    ep0Bo   0x000400       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep0Bi   0x000404       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep1Bo   0x000408       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep1Bi   0x00040c       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep2Bo   0x000410       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep2Bi   0x000414       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep3Bo   0x000418       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                    ep3Bi   0x00041c       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                 SetupPkt   0x000420       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+              CtrlTrfData   0x000428       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+           ep1_out_buffer   0x000430       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+            ep1_in_buffer   0x000470       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+           ep2_out_buffer   0x0004b0       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+            ep2_in_buffer   0x0004f0       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+           ep3_out_buffer   0x000530       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+            ep3_in_buffer   0x000570       data     extern Z:\home\andres\u4a2\usb4all\usbconf\usballoc\usbmmap.c
+                  SPPDATA   0x000f62       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SPPCFG   0x000f63       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               SPPCFGbits   0x000f63       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SPPEPS   0x000f64       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               SPPEPSbits   0x000f64       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SPPCON   0x000f65       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               SPPCONbits   0x000f65       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UFRM   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UFRML   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UFRMLbits   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UFRMH   0x000f67       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UFRMHbits   0x000f67       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      UIR   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  UIRbits   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      UIE   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  UIEbits   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEIR   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEIRbits   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEIE   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEIEbits   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                USTATbits   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    USTAT   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UCON   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UCONbits   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UADDR   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UADDRbits   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UCFG   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UCFGbits   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP0bits   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP0   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP1bits   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP1   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP2bits   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP2   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP3   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP3bits   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP4bits   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP4   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP5bits   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP5   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP6bits   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP6   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP7bits   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP7   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP8   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP8bits   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 UEP9bits   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     UEP9   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP10   0x000f7a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP10bits   0x000f7a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP11bits   0x000f7b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP11   0x000f7b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP12bits   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP12   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP13   0x000f7d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP13bits   0x000f7d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP14   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP14bits   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    UEP15   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                UEP15bits   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               CCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              CCP1DELbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  CCP1DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+             ECCP1DELbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 ECCP1DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 ECCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+             ECCP1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\traditional\proc\p18F4550.asm
+
+

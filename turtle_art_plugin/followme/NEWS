@@ -1,0 +1,28 @@
++add block threshold
++fix translations to taextras.pot
+
+VERSION @ VERSION 6 (BUTIA)
++ fix traslation
++ i10n-es suport
+
+VERSION @ VERSION 5 (BUTIA)
++ Initial comit
++ Copyright added
++ calibrate from plugin
++ pygame library
+/ icons fixed
+I Exceptions handlers
+
+####################################################################################
+
+NEWS Structure:
+I info
++ added
+- removed
+/ changed
+//TODO: thing todo
+//FIXME: thing to fix
+
+Please improve this NEWS, adding new information at the beginning of this file
+Add important or relevant changes to define the changelogs from one version to another
+- Team Butia -

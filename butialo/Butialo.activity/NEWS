@@ -1,0 +1,26 @@
+1
+
+* First Public Release, derived from Pippy v40
+
+2
+
+* New butialo.lua architecture
+* Module list contains also not yet conected devices
+* Module list in alphabetical order, faster loading
+* Bugfixes in array data structure
+
+3
+
+* More robust events range handling
+* Snippets pannel revised:
+  * Devices grouped
+  * Events group added
+  * Comments and other cleanup
+* "Clear" button removed
+* "Auto-format" button added
+* PID library available
+
+4
+
+* Refresh Devices button
+* Can run selected fragments of code

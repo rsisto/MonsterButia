@@ -1,0 +1,21 @@
+
+--Esta línea y las que están debajo serán ignoradas--
+
+M    main.o
+M    usb4all2.lst
+M    usb4all2.cod
+M    usb4all2.cof
+M    usb4all2.map
+M    user/usr_led_rojo.o
+M    user/adminModule.o
+M    user/descriptorManager.o
+M    user/loaderModule.o
+M    user/usr_led_verde.o
+M    user/dac.o
+M    user/usr_puerta.o
+M    user/dynamicPolling.o
+M    user/usr_buzzer.o
+M    user/usr_led_amarillo.o
+M    user/usr_display.o
+M    user/handlerManager.o
+M    user/userLoopBack.o

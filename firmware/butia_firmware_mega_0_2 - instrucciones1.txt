@@ -1,0 +1,35 @@
+Bajar el IDE Arduino 0018 (en Linux bajar también avrlibc, avrgcc y avrdude)
+
+Si ya lo teníamos bajado, ir a la carpeta "libraries" dentro de la carpeta del IDE Arduino, y borrar cualquier versión que haya de la biblioteca ax12 
+
+Ir a la carpeta del IDE Arduino 0018, /hardware/arduino/cores/arduino/ editar el archivo HardwareSerial.cpp y comentar lo siguiente:
+
+/*
+SIGNAL(SIG_USART1_RECV)
+{
+  unsigned char c = UDR1;
+  store_char(c, &rx_buffer1);
+}
+
+SIGNAL(SIG_USART2_RECV)
+{
+  unsigned char c = UDR2;
+  store_char(c, &rx_buffer2);
+}
+*/
+
+Abrir el IDE Arduino 0018
+
+Abrir el sketch "butia_firmware_mega_0_2.pde", que a su vez tiene que estar en una carpeta "butia_firmware_mega_0_2" junto con los otros archivos .pde, .h y .cpp
+
+Conectar el cable USB a la placa
+
+En el menú "Tools", ir a "Board" y seleccionar "Arduino Mega"
+
+Ahí mismo en "Tools", ir a "Serial Port" y elegir el puerto serial de la Arduino, típicamente "/dev/ttyUSB01" (o algo así)
+
+Apretar el botón de "upload" (6o. ícono contando desde la izquierda, el que tiene una flecha apuntando a la derecha, justito antes del último ícono, que es el monitor serial)
+
+Listo el pollo.
+
+Nota: este firmware es a 115200

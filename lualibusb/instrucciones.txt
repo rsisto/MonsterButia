@@ -1,0 +1,2 @@
+gcc -I/tmp/libusb-0.1.12/ -I/tmp/lua-5.1.4/src -c -fPIC -fno-stack-protector lualibusb.c
+ld -shared -soname libluausb.so.1 -o libluausb.so.1.0 -lusb lualibusb.o
